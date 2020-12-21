@@ -144,7 +144,7 @@ print("Execution Time is {} ms".format(start.elapsed_time(end)))
 | **ResNet-18** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **46.60**             |   **12.200**   |
 | **ResNet-34** | :heavy_check_mark: |                       | :heavy_check_mark: |                    |   **108.16**            |   **28.106**   |
 | **ResNet-34** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **85.20**             |   **22.315**   |
-| **ResNet-50** | :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **121.73**            |  **319.016**   |
-| **ResNet-50** |                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **100.23**            |  **261.112**   |
+| **ResNet-50** | :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **121.73**            |   **31.901**   |
+| **ResNet-50** |                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **100.23**            |   **26.111**   |
 | **ResNet-101**| :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **194.65**            |   **50.946**   |
 | **ResNet-101**|                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **172.65**            |   **45.155**   |
