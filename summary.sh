@@ -1,5 +1,5 @@
 #!/bin/sh
 
-python3 resnet.py --d 18 > resnet18.txt
-python3 resnet.py --d 34 > resnet34.txt
-python3 resnet.py --d 50 > resnet50.txt
+python3 timer.py --d 18 > model_structures/resnet18.txt
+python3 timer.py --d 34 > model_structures/resnet34.txt
+python3 timer.py --d 50 > model_structures/resnet50.txt
