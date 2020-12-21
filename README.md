@@ -104,7 +104,7 @@ All the experiments are performed on a single **12 GB GeForce RTX 2080 Ti** with
 
 - The stats are from the files in **Resnet-x's** corresponding `resnetx_stats/` folder; where `x ∈ {18, 34, 50, 101}`.
 
-- Calculated using [Event.record()](https://pytorch.org/docs/stable/cuda.html#torch.cuda.Event) feature in `torch.cuda`.
+- Calculated using [Event.record( )](https://pytorch.org/docs/stable/cuda.html#torch.cuda.Event) method in `torch.cuda`.
 
 ```
 import torch
@@ -118,23 +118,18 @@ end.record()
 print("Execution Time is {} ms".format(start.elapsed_time(end)))
 ```
 
-|-----------------------------------------------------------------------------------------------------------------------------------------|
-|                                                           **Inference Time**                                                            |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| Model         |     Cityscapes     | PASCAL-VOC-2012    | BasicBlock         | Bottleneck         | Inference Time (ms)     | FPS       |
-| ------        | ------------------ | ------------------ | ------------------ | ------------------ | ------------------------|-----------|
-| **ResNet-18** | :white_check_mark: |                    | :white_check_mark: |                    |   **103.44**            | **9.66**  |
-| **ResNet-18** |                    | :white_check_mark: | :white_check_mark: |                    |   **10.40**             | **96.15** |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-34** | :white_check_mark: |                    | :white_check_mark: |                    |   **173.41**            | **5.76**  |
-| **ResNet-34** |                    | :white_check_mark: | :white_check_mark: |                    |   **142.77**            | **7.00**  |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-50** | :white_check_mark: |                    |                    | :white_check_mark: |   **295.34**            | **3.38**  |
-| **ResNet-50** |                    | :white_check_mark: |                    | :white_check_mark: |   **144.18**            | **6.93**  |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-101**| :white_check_mark: |                    |                    | :white_check_mark: |   **531.26**            | **1.88**  |
-| **ResNet-101**|                    | :white_check_mark: |                    | :white_check_mark: |   **422.24**            | **2.36**  |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
+
+|     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     |   Inference Time (ms)   |    FPS    |
+| ------------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------------|-----------|
+| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |         **103.44**      | **9.66**  |
+| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |         **10.40**       | **96.15** |
+| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |         **173.41**      | **5.76**  |
+| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |         **142.77**      | **7.00**  |
+| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |         **295.34**      | **3.38**  |
+| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |         **144.18**      | **6.93**  |
+| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |         **531.26**      | **1.88**  |
+| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |         **422.24**      | **2.36**  |
+
 
 ### Memory Report
 
@@ -142,20 +137,14 @@ print("Execution Time is {} ms".format(start.elapsed_time(end)))
 
 - Calculated using the [pytorch-memlab](https://pypi.org/project/pytorch-memlab/) package.
 
-|-----------------------------------------------------------------------------------------------------------------------------------------|
-|                                                           **Inference Memory Report**                                                   |
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| Model         |     Cityscapes     | PASCAL-VOC-2012    | BasicBlock         | Bottleneck         | Allocated Memory (MB)   | # Tensors (M) |
-| ------        | ------------------ | ------------------ | ------------------ | ------------------ | ------------------------|-----------|
-| **ResNet-18** | :white_check_mark: |                    | :white_check_mark: |                    |   **68.69**             | **17.990**|
-| **ResNet-18** |                    | :white_check_mark: | :white_check_mark: |                    |   **46.60**             | **12.200**|
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-34** | :white_check_mark: |                    | :white_check_mark: |                    |   **108.16**            | **28.106**|
-| **ResNet-34** |                    | :white_check_mark: | :white_check_mark: |                    |   **85.20**             | **22.315**|
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-50** | :white_check_mark: |                    |                    | :white_check_mark: |   **121.73**            |**319.016**|
-| **ResNet-50** |                    | :white_check_mark: |                    | :white_check_mark: |   **100.23**            |**261.112**|
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
-| **ResNet-101**| :white_check_mark: |                    |                    | :white_check_mark: |   **194.65**            | **50.946**|
-| **ResNet-101**|                    | :white_check_mark: |                    | :white_check_mark: |   **172.65**            | **45.155**|
-|---------------------------------------------------------------------------------------------------|-------------------------------------|
+
+|     Model     |     Cityscapes     |    PASCAL-VOC-2012    |     BasicBlock     |     Bottleneck     |  Allocated Memory (MB)  | # Tensors (M)  |
+| ------------- | ------------------ | --------------------- | ------------------ | ------------------ | ----------------------- | -------------- |
+| **ResNet-18** | :heavy_check_mark: |                       | :heavy_check_mark: |                    |   **68.69**             |   **17.990**   |
+| **ResNet-18** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **46.60**             |   **12.200**   |
+| **ResNet-34** | :heavy_check_mark: |                       | :heavy_check_mark: |                    |   **108.16**            |   **28.106**   |
+| **ResNet-34** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **85.20**             |   **22.315**   |
+| **ResNet-50** | :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **121.73**            |  **319.016**   |
+| **ResNet-50** |                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **100.23**            |  **261.112**   |
+| **ResNet-101**| :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **194.65**            |   **50.946**   |
+| **ResNet-101**|                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **172.65**            |   **45.155**   |
