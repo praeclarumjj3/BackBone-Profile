@@ -1,0 +1,150 @@
+Number of GPUs Available: 8
+CUDA Current Device Id: 0
+Type of GPU: GeForce RTX 2080 Ti
+------------------------------
+
+----------------------------------------------
+----------------------------------------------
+ResNet
+
+Execution Time for ConvLayer with kernel_size=7, stride=2, padding=3 and input shape: [2, 3, 1024, 2048] is 4.5808000564575195 ms
+Execution Time for BN+ReLU layer with input shape: [2, 64, 512, 1024] is 5.4891839027404785 ms
+Execution Time for MaxPool layer with input shape: [2, 64, 512, 1024] is 1.4697920083999634 ms
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.8001919984817505 ms
+Execution Time for a BN+ReLU with input shape: [2, 64, 256, 512] is 1.5797439813613892 ms
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.9878079891204834 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.4096640348434448 ms
+Execution Time for a BN+ReLU with input shape: [2, 64, 256, 512] is 1.5600639581680298 ms
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.987007975578308 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.4135680198669434 ms
+Execution Time for a BN+ReLU with input shape: [2, 64, 256, 512] is 1.5630079507827759 ms
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.9780479669570923 ms
+-------------------------
+Execution Time for Block 1 with stride = 1 and input shape: [2, 64, 256, 512] is 21.304576873779297 ms
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 64, 256, 512] is 1.632256031036377 ms
+Execution Time for a BN+ReLU with input shape: [2, 128, 128, 256] is 0.7252479791641235 ms
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.6649919748306274 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.2558399438858032 ms
+Execution Time for a BN+ReLU with input shape: [2, 128, 128, 256] is 0.7334719896316528 ms
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.6711679697036743 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.2472319602966309 ms
+Execution Time for a BN+ReLU with input shape: [2, 128, 128, 256] is 0.7237120270729065 ms
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.6560959815979004 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.2492799758911133 ms
+Execution Time for a BN+ReLU with input shape: [2, 128, 128, 256] is 0.7175359725952148 ms
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.6621439456939697 ms
+-------------------------
+Execution Time for Block 2 with stride = 2 and input shape: [2, 64, 256, 512] is 19.50998306274414 ms
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 128, 128, 256] is 1.37772798538208 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5114240050315857 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.5408639907836914 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.1957119703292847 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5162240266799927 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.5138239860534668 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.2457599639892578 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5178239941596985 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.5330560207366943 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.2365440130233765 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5201280117034912 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.5119999647140503 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.230847954750061 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5214719772338867 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.5441919565200806 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.241536021232605 ms
+Execution Time for a BN+ReLU with input shape: [2, 256, 64, 128] is 0.5186240077018738 ms
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.6280319690704346 ms
+-------------------------
+Execution Time for Block 3 with stride = 2 and input shape: [2, 128, 128, 256] is 24.643455505371094 ms
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 256, 64, 128] is 1.0506240129470825 ms
+Execution Time for a BN+ReLU with input shape: [2, 512, 32, 64] is 0.15360000729560852 ms
+Execution Time for a conv3x3 with input shape: [2, 512, 32, 64] is 1.7488640546798706 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 512, 32, 64] is 1.4129600524902344 ms
+Execution Time for a BN+ReLU with input shape: [2, 512, 32, 64] is 0.15676799416542053 ms
+Execution Time for a conv3x3 with input shape: [2, 512, 32, 64] is 1.5195200443267822 ms
+-------------------------
+
+-------------------------
+BasicBlock
+
+Execution Time for a conv3x3 with input shape: [2, 512, 32, 64] is 1.206272006034851 ms
+Execution Time for a BN+ReLU with input shape: [2, 512, 32, 64] is 0.14368000626564026 ms
+Execution Time for a conv3x3 with input shape: [2, 512, 32, 64] is 1.5175679922103882 ms
+-------------------------
+Execution Time for Block 4 with stride = 2 and input shape: [2, 256, 64, 128] is 9.977439880371094 ms
+Execution Time for AvgPool Layer with input shape: [2, 512, 32, 64] is 0.11615999788045883 ms
+Execution Time for FC layer with dimension=2048 and input shape: [2, 512] is 0.49503999948501587 ms
+----------------------------------------------
+----------------------------------------------
+------------------------------
+Total Execution Time: [2, 3, 1024, 2048] is 88.19302368164062 ms

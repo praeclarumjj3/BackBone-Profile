@@ -1,0 +1,5 @@
+torch==1.7.0
+torchsummary==1.5.1
+torchvision==0.8.2
+typing==3.7.4.3
+pytorch-memlab==0.2.3
