@@ -326,3 +326,5 @@ Parameter320                                          (512,)     2.00K
 Total Tensors: 31901661 	Used Memory: 121.73M
 The allocated memory on cuda:0: 121.73M
 -------------------------------------------------------------------------------
+
+Parameters: 25557032

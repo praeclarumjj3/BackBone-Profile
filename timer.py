@@ -7,8 +7,11 @@ except ImportError:
     from torch.utils.model_zoo import load_url as load_state_dict_from_url
 from typing import Type, Any, Callable, Union, List, Optional
 import argparse
-from torchsummary import summary
 import os
+import torchvision.models as models
+import numpy as np
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '4'
 
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
            'resnet152', 'resnext50_32x4d', 'resnext101_32x8d',
@@ -35,6 +38,21 @@ rend = torch.cuda.Event(enable_timing=True)
 tstart = torch.cuda.Event(enable_timing=True)
 tend = torch.cuda.Event(enable_timing=True)
 
+layers = {"Conv2D": [["e"],[0]],
+        "BN": [["e"],[0]],
+        "MaxPool": [["e"],[0]],
+        "Block1": [["e"],[0]],
+        "Block2": [["e"],[0]],
+        "Block3": [["e"],[0]],
+        "Block4": [["e"],[0]],
+        "AvgPool": [["e"],[0]],
+        "FC": [["e"],[0]],}
+
+
+def add_time(key,value):
+    if len(layers[key][0]) is 1:
+        layers[key][0].append(value[0])
+    layers[key][1].append(value[1])
 
 def conv3x3(in_planes: int, out_planes: int, stride: int = 1, groups: int = 1, dilation: int = 1) -> nn.Conv2d:
     """3x3 convolution with padding"""
@@ -80,32 +98,12 @@ class BasicBlock(nn.Module):
 
     def forward(self, x: Tensor) -> Tensor:
         identity = x
-        
-        print('\n-------------------------')
-        print("BasicBlock\n")
-        shape = list(x.shape)
-        bstart.record()
+    
         out = self.conv1(x)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a conv3x3 with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-
-        shape = list(out.shape)
-        bstart.record()
         out = self.bn1(out)
         out = self.relu(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a BN+ReLU with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-
-        shape = list(out.shape)
-        bstart.record()
         out = self.conv2(out)
         out = self.relu(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a conv3x3 with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-        print('-------------------------')
         out = self.bn2(out)
 
         if self.downsample is not None:
@@ -126,15 +124,15 @@ class Bottleneck(nn.Module):
     expansion: int = 4
 
     def __init__(
-            self,
-            inplanes: int,
-            planes: int,
-            stride: int = 1,
-            downsample: Optional[nn.Module] = None,
-            groups: int = 1,
-            base_width: int = 64,
-            dilation: int = 1,
-            norm_layer: Optional[Callable[..., nn.Module]] = None
+        self,
+        inplanes: int,
+        planes: int,
+        stride: int = 1,
+        downsample: Optional[nn.Module] = None,
+        groups: int = 1,
+        base_width: int = 64,
+        dilation: int = 1,
+        norm_layer: Optional[Callable[..., nn.Module]] = None
     ) -> None:
         super(Bottleneck, self).__init__()
         if norm_layer is None:
@@ -153,46 +151,16 @@ class Bottleneck(nn.Module):
 
     def forward(self, x: Tensor) -> Tensor:
         identity = x
-        
-        print('\n-------------------------')
-        print("Bottleneck\n")
-        shape = list(x.shape)
-        bstart.record()
+
         out = self.conv1(x)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a conv1x1 with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-        
-        shape = list(out.shape)
-        bstart.record()
         out = self.bn1(out)
         out = self.relu(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a BN+ReLU with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
 
-        shape = list(out.shape)
-        bstart.record()
         out = self.conv2(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a conv3x3 with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-        
-        shape = list(out.shape)
-        bstart.record()
         out = self.bn2(out)
         out = self.relu(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a BN+ReLU with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
 
-        shape = list(out.shape)
-        bstart.record()
         out = self.conv3(out)
-        bend.record()
-        torch.cuda.synchronize()
-        print("Execution Time for a conv1x1 with input shape: {} is {} ms".format(shape,bstart.elapsed_time(bend)))
-        print('-------------------------')
         out = self.bn3(out)
 
         if self.downsample is not None:
@@ -200,6 +168,7 @@ class Bottleneck(nn.Module):
 
         out += identity
         out = self.relu(out)
+
         return out
 
 
@@ -291,66 +260,64 @@ class ResNet(nn.Module):
 
     def _forward_impl(self, x: Tensor) -> Tensor:
         # See note [TorchScript super()]
-        
-        print('\n----------------------------------------------')
-        print('----------------------------------------------')
-        print("ResNet\n")
+       
         shape = list(x.shape)
         rstart.record()
         x = self.conv1(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for ConvLayer with kernel_size=7, stride=2, padding=3 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("Conv2D",("with kernel_size=7, stride=2, padding=3 and input shape: {}".format(shape),rstart.elapsed_time(rend)))
         
         shape = list(x.shape)
         rstart.record()
         x = self.bn1(x)
-        x = self.relu(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for BN+ReLU layer with input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("BN",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
+        
+        x = self.relu(x)
         
         shape = list(x.shape)
         rstart.record()
         x = self.maxpool(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for MaxPool layer with input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
-        
+        add_time("MaxPool",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
+
         shape = list(x.shape)
         rstart.record()
         x = self.layer1(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for Block 1 with stride = 1 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("Block1",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
         
         shape = list(x.shape)
         rstart.record()
         x = self.layer2(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for Block 2 with stride = 2 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
-        
+        add_time("Block2",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
+
         shape = list(x.shape)
         rstart.record()
         x = self.layer3(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for Block 3 with stride = 2 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("Block3",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
         
         shape = list(x.shape)
         rstart.record()
         x = self.layer4(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for Block 4 with stride = 2 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("Block4",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
         
         shape = list(x.shape)
         rstart.record()
         x = self.avgpool(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for AvgPool Layer with input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
+        add_time("AvgPool",("with input shape: {}".format(shape),rstart.elapsed_time(rend)))
         
         x = torch.flatten(x, 1)
         
@@ -359,9 +326,7 @@ class ResNet(nn.Module):
         x = self.fc(x)
         rend.record()
         torch.cuda.synchronize()
-        print("Execution Time for FC layer with dimension=2048 and input shape: {} is {} ms".format(shape,rstart.elapsed_time(rend)))
-        print('----------------------------------------------')
-        print('----------------------------------------------')
+        add_time("FC",(" with dimension=2048 and input shape: {}".format(shape),rstart.elapsed_time(rend)))
         return x
 
     def forward(self, x: Tensor) -> Tensor:
@@ -503,51 +468,131 @@ if __name__ == '__main__':
     help="depth of resnet from [18,34,50,101,152]")
     parser.add_argument("--i", default="cityscapes",
     help="input dataset from ['cityscapes', 'pascal']")
-    parser.add_argument("--s", default=1, type=int,
-    help="Batch Size of the input")
+    parser.add_argument("--w", default="yes",
+    help="To calculate layerwise or total inference time")
     args =  parser.parse_args()
 
-    print('Number of GPUs Available: {}'.format(torch.cuda.device_count()))
-    print("CUDA Current Device Id: {}".format(torch.cuda.current_device()))
-    print("Type of GPU: {}".format(torch.cuda.get_device_name(torch.cuda.current_device())))
-    print('------------------------------')
-    
+    device = torch.device("cuda")
+
     if args.i == 'pascal':
-        img = torch.randn(args.s, 3, 500, 334).to("cuda")
+        img = torch.randn(1, 3, 500, 334).to(device)
     else:
-        img = torch.randn(args.s, 3, 1024, 2048).to("cuda:0")
+        img = torch.randn(1, 3, 1024, 2048).to(device)
 
     if args.d is 18:
-        model = resnet18(BasicBlock,False).to("cuda:0")
+        model = resnet18(BasicBlock,False).to(device)
+        warm_model = models.resnet18().to(device)
+        model_whole = models.resnet18().to(device)
         if not os.path.exists('resnet18_stats'):
             os.makedirs('resnet18_stats')
     elif args.d is 34:
-        model = resnet34(BasicBlock,False).to("cuda:0")
+        model = resnet34(BasicBlock,False).to(device)
+        warm_model = models.resnet34().to(device)
+        model_whole = models.resnet34().to(device)
         if not os.path.exists('resnet34_stats'):
             os.makedirs('resnet34_stats')
     elif args.d is 50:
-        model = resnet50(Bottleneck,False).to("cuda:0")
+        model = resnet50(Bottleneck,False).to(device)
+        warm_model = models.resnet50().to(device)
+        model_whole = models.resnet50().to(device)
         if not os.path.exists('resnet50_stats'):
             os.makedirs('resnet50_stats')
     elif args.d is 101:
-        model = resnet101(Bottleneck,False).to("cuda:0")
+        model = resnet101(Bottleneck,False).to(device)
+        warm_model = models.resnet101().to(device)
+        model_whole = models.resnet101().to(device)
         if not os.path.exists('resnet101_stats'):
             os.makedirs('resnet101_stats')
     elif args.d is 152:
-        model = resnet152(Bottleneck,False).to("cuda:0")
+        model = resnet152(Bottleneck,False).to(device)
+        warm_model = models.resnet152().to(device)
+        model_whole = models.resnet152().to(device)
     else:
         print("Please enter a valid depth!")
         exit()
     
     # Uncomment to print the model structure
     # print(model)
-
+    
+    warm_iter = 25
     with torch.no_grad():
-        shape = list(img.shape)
-        tstart.record()
-        model(img)
-        tend.record()
-        torch.cuda.synchronize()
-        print('------------------------------')
-        print("Total Execution Time: {} is {} ms".format(shape,tstart.elapsed_time(tend)))
+        for i in range(warm_iter):
+            warm_model(img)
+
+    iter = 300
+    times = []
+    
+    if args.w == "yes":
+        with torch.no_grad():
+            for i in range(iter):
+                shape_input = list(img.shape)
+                tstart.record()
+                model_whole(img)
+                tend.record()
+                torch.cuda.synchronize()
+                times.append(tstart.elapsed_time(tend))
+    else:
+        with torch.no_grad():
+            for i in range(iter):
+                shape_input = list(img.shape)
+                tstart.record()
+                model(img)
+                tend.record()
+                torch.cuda.synchronize()
+                times.append(tstart.elapsed_time(tend))
+    
+    if args.w == "yes":
+        pass
+    
+    else:
+        ## Conv2D
+        m = np.mean(layers["Conv2D"][1][1:])
+        s = np.std(layers["Conv2D"][1][1:])
+        print("Average Execution Time for Conv2D {} is {} ms with std = {} ms".format(layers["Conv2D"][0][1],round(m,3),round(s,3)))
+
+        ## BN
+        m = np.mean(layers["BN"][1][1:])
+        s = np.std(layers["BN"][1][1:])
+        print("Average Execution Time for BN {} is {} ms with std = {} ms".format(layers["BN"][0][1],round(m,3),round(s,3)))
+
+        ## MaxPool
+        m = np.mean(layers["MaxPool"][1][1:])
+        s = np.std(layers["MaxPool"][1][1:])
+        print("Average Execution Time for MaxPool {} is {} ms with std = {} ms".format(layers["MaxPool"][0][1],round(m,3),round(s,3)))
+
+        ## Block1
+        m = np.mean(layers["Block1"][1][1:])
+        s = np.std(layers["Block1"][1][1:])
+        print("Average Execution Time for Block1 {} is {} ms with std = {} ms".format(layers["Block1"][0][1],round(m,3),round(s,3)))
+
+        ## Block2
+        m = np.mean(layers["Block2"][1][1:])
+        s = np.std(layers["Block2"][1][1:])
+        print("Average Execution Time for Block2 {} is {} ms with std = {} ms".format(layers["Block2"][0][1],round(m,3),round(s,3)))
+
+        ## Block3
+        m = np.mean(layers["Block3"][1][1:])
+        s = np.std(layers["Block3"][1][1:])
+        print("Average Execution Time for Block3 {} is {} ms with std = {} ms".format(layers["Block3"][0][1],round(m,3),round(s,3)))
+
+        ## Block4
+        m = np.mean(layers["Block4"][1][1:])
+        s = np.std(layers["Block4"][1][1:])
+        print("Average Execution Time for Block3 {} is {} ms with std = {} ms".format(layers["Block4"][0][1],round(m,3),round(s,3)))
+
+        ## AvgPool
+        m = np.mean(layers["AvgPool"][1][1:])
+        s = np.std(layers["AvgPool"][1][1:])
+        print("Average Execution Time for AvgPool {} is {} ms with std = {} ms".format(layers["AvgPool"][0][1],round(m,3),round(s,3)))
+
+        ## FC
+        m = np.mean(layers["FC"][1][1:])
+        s = np.std(layers["FC"][1][1:])
+        print("Average Execution Time for FC {} is {} ms with std = {} ms\n".format(layers["FC"][0][1],round(m,3),round(s,3)))
+
+    ## Total
+    m = np.sum(times)/iter
+    s = np.std(times)
+    print("Average Execution Time for ResNet-{} with input shape: {} is {} ms with std = {} ms".format(args.d,shape_input,round(m,3),round(s,3)))
+    
     torch.cuda.empty_cache()

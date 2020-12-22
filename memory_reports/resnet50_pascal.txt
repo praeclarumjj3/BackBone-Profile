@@ -327,3 +327,5 @@ Total Tensors: 26111205 	Used Memory: 99.64M
 The allocated memory on cuda:0: 100.23M
 Memory differs due to the matrix alignment or invisible gradient buffer tensors
 -------------------------------------------------------------------------------
+
+Parameters: 25557032

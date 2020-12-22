@@ -11,6 +11,7 @@ import argparse
 from torchsummary import summary
 import os
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '4'
 
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
            'resnet152', 'resnext50_32x4d', 'resnext101_32x8d',
@@ -395,24 +396,28 @@ if __name__ == '__main__':
     help="Batch Size of the input")
     parser.add_argument("--struct", default=False, type=bool,
     help="To calculate inference time or record model structure")
+    parser.add_argument("--device", default="cuda",
+    help="cpu or cuda")
     args =  parser.parse_args()
+
+    device = torch.device(args.device)
     
     if args.i == 'pascal':
-        img = torch.randn(args.s, 3, 500, 334).to("cuda")
+        img = torch.randn(args.s, 3, 500, 334).to(device)
     else:
-        img = torch.randn(args.s, 3, 1024, 2048).to("cuda:0")
+        img = torch.randn(args.s, 3, 1024, 2048).to(device)
 
 
     if args.d is 18:
-        model = resnet18(BasicBlock,False).to("cuda:0")
+        model = resnet18(BasicBlock,False).to(device)
     elif args.d is 34:
-        model = resnet34(BasicBlock,False).to("cuda:0")
+        model = resnet34(BasicBlock,False).to(device)
     elif args.d is 50:
-        model = resnet50(Bottleneck,False).to("cuda:0")
+        model = resnet50(Bottleneck,False).to(device)
     elif args.d is 101:
-        model = resnet101(Bottleneck,False).to("cuda:0")
+        model = resnet101(Bottleneck,False).to(device)
     elif args.d is 152:
-        model = resnet152(Bottleneck,False).to("cuda:0")
+        model = resnet152(Bottleneck,False).to(device)
     else:
         print("Please enter a valid depth!")
         exit()
@@ -424,7 +429,7 @@ if __name__ == '__main__':
         with torch.no_grad():
             print(summary(model,tuple(list(img.shape)[1:])))
             torch.cuda.empty_cache()
-            exit()
+        exit()
 
     with torch.no_grad():    
         model(img)
@@ -432,3 +437,6 @@ if __name__ == '__main__':
 
     reporter = MemReporter()
     reporter.report(verbose=True)
+    
+    total_params = sum(p.numel() for p in model.parameters())
+    print("Parameters: {}".format(total_params))

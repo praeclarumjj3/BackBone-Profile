@@ -1,0 +1,11 @@
+Average Execution Time for Conv2D with kernel_size=7, stride=2, padding=3 and input shape: [1, 3, 500, 334] is 0.093 ms with std = 0.02 ms
+Average Execution Time for BN with input shape: [1, 64, 250, 167] is 0.272 ms with std = 0.027 ms
+Average Execution Time for MaxPool with input shape: [1, 64, 250, 167] is 0.041 ms with std = 0.003 ms
+Average Execution Time for Block1 with input shape: [1, 64, 125, 84] is 1.866 ms with std = 0.35 ms
+Average Execution Time for Block2 with input shape: [1, 256, 125, 84] is 1.51 ms with std = 0.331 ms
+Average Execution Time for Block3 with input shape: [1, 512, 63, 42] is 3.393 ms with std = 1.212 ms
+Average Execution Time for Block3 with input shape: [1, 1024, 32, 21] is 1.674 ms with std = 0.234 ms
+Average Execution Time for AvgPool with input shape: [1, 2048, 16, 11] is 0.016 ms with std = 0.016 ms
+Average Execution Time for FC  with dimension=2048 and input shape: [1, 2048] is 0.037 ms with std = 0.021 ms
+
+Average Execution Time for ResNet-50 with input shape: [1, 3, 500, 334] is 25.746 ms with std = 7.952 ms
