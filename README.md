@@ -122,7 +122,7 @@ print("Execution Time is {} ms".format(start.elapsed_time(end)))
 |     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     |   Inference Time (ms)   |    FPS    |
 | ------------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------------|-----------|
 | **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |         **103.44**      | **9.66**  |
-| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |         **10.40**       | **96.15** |
+| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |         **84.23**       | **11.87** |
 | **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |         **173.41**      | **5.76**  |
 | **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |         **142.77**      | **7.00**  |
 | **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |         **295.34**      | **3.38**  |
