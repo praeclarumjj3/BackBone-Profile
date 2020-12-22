@@ -164,8 +164,8 @@ print("Execution Time is {} ms".format((end-start)*1000))
 | ------------- | ------------------ | ------------------ | ------------------ | ------------------ | --------------------| -------- | --------- |
 | **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **605.45**    | *36.14*  | **1.65**  |
 | **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **60.75**     | *24.79*  | **16.46** |
-| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **------**    | *-----*  | **-----** |
-| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **------**    | *-----*  | **-----** |
+| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **927.89**    | *118.26* | **1.07**  |
+| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **131.81**    | *173.22* | **7.58**  |
 | **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
 | **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
 | **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
