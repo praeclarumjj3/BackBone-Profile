@@ -131,14 +131,14 @@ print("Execution Time is {} ms".format(start.elapsed_time(end)))
 
 |     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
 | ------------- | ------------------ | ------------------ | ------------------ | ------------------ | --------------------| -------- | --------- |
-| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **40.211**    | *6.232*  | **24.86** |
-| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **4.693**     | *0.699*  | **213.08**|
-| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **67.246**    | *8.928*  | **14.87** |
-| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **6.964**     | *1.597*  | **143.59**|
-| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **130.713**   | *15.115* | **7.65**  |
-| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **14.146**    | *2.191*  | **70.69** |
-| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **251.154**   | *51.768* | **3.98**  |
-| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **35.928**    | *4.147*  | **27.83** |
+| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **18.719**    | *0.104*  | **53.42** |
+| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **2.547**     | *0.213*  | **392.61**|
+| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **31.779**    | *0.228*  | **31.46** |
+| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **5.197**     | *0.186*  | **192.41**|
+| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **61.397**    | *0.386*  | **16.28** |
+| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **7.628**     | *0.232*  | **131.09**|
+| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **100.426**   | *1.184*  | **9.95**  |
+| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **12.579**    | *0.428*  | **79.49** |
 
 
 ### Inference Time (CPU) 
@@ -162,14 +162,14 @@ print("Execution Time is {} ms".format((end-start)*1000))
 
 |     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
 | ------------- | ------------------ | ------------------ | ------------------ | ------------------ | --------------------| -------- | --------- |
-| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **605.45**    | *36.14*  | **1.65**  |
-| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **60.75**     | *24.79*  | **16.46** |
-| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **927.89**    | *118.26* | **1.07**  |
-| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **131.81**    | *173.22* | **7.58**  |
-| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
-| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
-| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
-| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **------**    | *-----*  | **-----** |
+| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **566.75**    | *35.50*  | **1.76**  |
+| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **55.79**     | *3.08*   | **17.92** |
+| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **807.57**    | *20.213* | **1.23**  |
+| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **78.77**     | *5.37*   | **12.69** |
+| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **1626.05**   | *92.88*  | **0.61**  |
+| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **133.71**    | *7.469*  | **7.47**  |
+| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **2344.98**   | *120.06* | **0.42**  |
+| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **223.59**    | *13.51*  | **4.47**  |
 
 
 ### Memory Report
