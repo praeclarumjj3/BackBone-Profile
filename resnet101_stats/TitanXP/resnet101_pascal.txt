@@ -1,0 +1,1 @@
+Average Execution Time for ResNet-101 with input shape: [1, 3, 500, 334] is 14.509 ms with std = 0.013 ms

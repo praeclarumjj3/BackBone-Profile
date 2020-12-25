@@ -63,26 +63,10 @@ The repository contains the following modules:
 
 ### Inference Time
 
-- To store inference time for different varaints of ResNet, run the following commands:
+- To store inference time for different varaints of ResNet, run the following command:
 
-#### ResNet-18
 ```
-$ sh stats18.sh 
-```
-
-#### ResNet-34
-```
-$ sh stats34.sh 
-```
-
-#### ResNet-50
-```
-$ sh stats50.sh 
-```
-
-#### ResNet-101
-```
-$ sh stats101.sh
+$ sh stats[x].sh // where x=18/34/50/101
 ```
 
 ### Model Structure
@@ -104,11 +88,11 @@ $ sh mem_report.sh
 
 ## 5. Results
 
-All the experiments are performed on a single **12 GB GeForce RTX 2080 Ti** with a `batch size=1` and 300 iterations.
+All the experiments are performed with a `batch size=1` and 300 iterations.
 
 ### Inference Time (GPU)
 
-- All the experiments are performed on a single **12 GB GeForce RTX 2080 Ti**.
+- All the experiments are performed individually on a single **12 GB GeForce RTX 2080 Ti** and a single **12GB TitanXP**. 
 
 - For `25 iterations` at the start, the period is considered as a [GPU-warm-up session](https://deci.ai/the-correct-way-to-measure-inference-time-of-deep-neural-networks/).
 
@@ -128,18 +112,29 @@ end.record()
 print("Execution Time is {} ms".format(start.elapsed_time(end)))
 ```
 
+### Memory Report
 
-|     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
-| ------------- | ------------------ | ------------------ | ------------------ | ------------------ | --------------------| -------- | --------- |
-| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **18.719**    | *0.104*  | **53.42** |
-| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **2.547**     | *0.213*  | **392.61**|
-| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **31.779**    | *0.228*  | **31.46** |
-| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **5.197**     | *0.186*  | **192.41**|
-| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **61.397**    | *0.386*  | **16.28** |
-| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **7.628**     | *0.232*  | **131.09**|
-| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **100.426**   | *1.184*  | **9.95**  |
-| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **12.579**    | *0.428*  | **79.49** |
+- The stats are from the files in `memory_reports/` folder.
 
+- Calculated using the [pytorch-memlab](https://pypi.org/project/pytorch-memlab/) package.
+
+#### Performance on Cityscapes
+
+|     Model     |     BasicBlock     |     Bottleneck     | Inference Time (ms) [2080Ti] | Inference Time (ms) [TitanXP]| Std (ms) [2080Ti] | Std (ms) [TitanXP]|   FPS [2080Ti] | FPS [TitanXP]  |  Allocated Memory (MB)  | # Params (M)  | # Tensors (M)  | 
+| ------------- | ------------------ | ------------------ | ---------------------------- | ---------------------------- | ----------------- | ----------------- | -------------- | -------------- | ----------------------- | --------------| -------------- |
+| **ResNet-18** | :heavy_check_mark: |                    |       **18.719**             |       **23.622**             | *0.104*           | *0.199*           | **53.42**      | **42.33**      |   **68.69**             | **11.689**    |   **17.990**   |
+| **ResNet-34** | :heavy_check_mark: |                    |       **31.779**             |       **38.588**             | *0.228*           | *0.595*           | **31.46**      | **25.91**      |   **108.16**            | **21.797**    |   **28.106**   |
+| **ResNet-50** |                    | :heavy_check_mark: |       **61.397**             |       **82.334**             | *0.386*           | *0.792*           | **16.28**      | **12.14**      |   **121.73**            | **25.557**    |   **31.901**   |
+| **ResNet-101**|                    | :heavy_check_mark: |       **100.426**            |       **122.491**            | *1.184*           | *1.356*           | **9.95**       | **8.16**       |   **194.65**            | **44.549**    |   **50.946**   |
+
+#### Performance on PASCAL-VOC-2012
+
+|     Model     |     BasicBlock     |     Bottleneck     | Inference Time (ms) [2080Ti] | Inference Time (ms) [TitanXP]| Std (ms) [2080Ti] | Std (ms) [TitanXP]|   FPS [2080Ti] | FPS [TitanXP]  |  Allocated Memory (MB)  | # Params (M)  | # Tensors (M)  | 
+| ------------- | ------------------ | ------------------ | ---------------------------- | ---------------------------- | ----------------- | ----------------- | -------------- | -------------- | ----------------------- | --------------| -------------- |
+| **ResNet-18** | :heavy_check_mark: |                    |       **2.547**              |       **2.940**              | *0.213*           | *0.203*           | **392.61**     | **340.13**     |   **46.60**             | **11.689**    |   **12.200**   |
+| **ResNet-34** | :heavy_check_mark: |                    |       **5.197**              |       **4.959**              | *0.186*           | *0.238*           | **192.41**     | **201.65**     |   **85.20**             | **21.797**    |   **22.315**   |
+| **ResNet-50** |                    | :heavy_check_mark: |       **7.628**              |       **8.927**              | *0.232*           | *0.241*           | **131.09**     | **112.01**     |   **100.23**            | **25.557**    |   **26.111**   |
+| **ResNet-101**|                    | :heavy_check_mark: |       **12.579**             |       **14.509**             | *0.428*           | *0.013*           | **79.49**      | **68.92**      |   **172.65**            | **44.549**    |   **45.155**   |
 
 ### Inference Time (CPU) 
 
@@ -159,33 +154,20 @@ end = time.perf_counter()
 print("Execution Time is {} ms".format((end-start)*1000))
 ```
 
+#### Performance on Cityscapes
 
-|     Model     |     Cityscapes     |  PASCAL-VOC-2012   |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
-| ------------- | ------------------ | ------------------ | ------------------ | ------------------ | --------------------| -------- | --------- |
-| **ResNet-18** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **566.75**    | *35.50*  | **1.76**  |
-| **ResNet-18** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **55.79**     | *3.08*   | **17.92** |
-| **ResNet-34** | :heavy_check_mark: |                    | :heavy_check_mark: |                    |       **807.57**    | *20.213* | **1.23**  |
-| **ResNet-34** |                    | :heavy_check_mark: | :heavy_check_mark: |                    |       **78.77**     | *5.37*   | **12.69** |
-| **ResNet-50** | :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **1626.05**   | *92.88*  | **0.61**  |
-| **ResNet-50** |                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **133.71**    | *7.469*  | **7.47**  |
-| **ResNet-101**| :heavy_check_mark: |                    |                    | :heavy_check_mark: |       **2344.98**   | *120.06* | **0.42**  |
-| **ResNet-101**|                    | :heavy_check_mark: |                    | :heavy_check_mark: |       **223.59**    | *13.51*  | **4.47**  |
+|     Model     |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
+| ------------- | ------------------ | ------------------ | --------------------| -------- | --------- |
+| **ResNet-18** | :heavy_check_mark: |                    |       **566.75**    | *35.50*  | **1.76**  |
+| **ResNet-34** | :heavy_check_mark: |                    |       **807.57**    | *20.213* | **1.23**  |
+| **ResNet-50** |                    | :heavy_check_mark: |       **1626.05**   | *92.88*  | **0.61**  |
+| **ResNet-101**|                    | :heavy_check_mark: |       **2344.98**   | *120.06* | **0.42**  |
 
+#### Performance on PASCAL-VOC-2012
 
-### Memory Report
-
-- The stats are from the files in `memory_reports/` folder.
-
-- Calculated using the [pytorch-memlab](https://pypi.org/project/pytorch-memlab/) package.
-
-
-|     Model     |     Cityscapes     |    PASCAL-VOC-2012    |     BasicBlock     |     Bottleneck     |  Allocated Memory (MB)  | # Params (M)  | # Tensors (M)  | 
-| ------------- | ------------------ | --------------------- | ------------------ | ------------------ | ----------------------- | --------------| --------------|
-| **ResNet-18** | :heavy_check_mark: |                       | :heavy_check_mark: |                    |   **68.69**             | **11.689**    |   **17.990**   | 
-| **ResNet-18** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **46.60**             | **11.689**    |   **12.200**   |
-| **ResNet-34** | :heavy_check_mark: |                       | :heavy_check_mark: |                    |   **108.16**            | **21.797**    |   **28.106**   |
-| **ResNet-34** |                    | :heavy_check_mark:    | :heavy_check_mark: |                    |   **85.20**             | **21.797**    |   **22.315**   |
-| **ResNet-50** | :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **121.73**            | **25.557**    |   **31.901**   |
-| **ResNet-50** |                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **100.23**            | **25.557**    |   **26.111**   |
-| **ResNet-101**| :heavy_check_mark: |                       |                    | :heavy_check_mark: |   **194.65**            | **44.549**    |   **50.946**   |
-| **ResNet-101**|                    | :heavy_check_mark:    |                    | :heavy_check_mark: |   **172.65**            | **44.549**    |   **45.155**   |
+|     Model     |     BasicBlock     |     Bottleneck     | Inference Time (ms) | Std (ms) |    FPS    | 
+| ------------- | ------------------ | ------------------ | --------------------| -------- | --------- |
+| **ResNet-18** | :heavy_check_mark: |                    |       **55.79**     | *3.08*   | **17.92** |
+| **ResNet-34** | :heavy_check_mark: |                    |       **78.77**     | *5.37*   | **12.69** |
+| **ResNet-50** |                    | :heavy_check_mark: |       **133.71**    | *7.469*  | **7.47**  |
+| **ResNet-101**|                    | :heavy_check_mark: |       **223.59**    | *13.51*  | **4.47**  |

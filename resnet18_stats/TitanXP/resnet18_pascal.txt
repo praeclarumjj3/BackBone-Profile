@@ -1,0 +1,1 @@
+Average Execution Time for ResNet-18 with input shape: [1, 3, 500, 334] is 2.94 ms with std = 0.203 ms
