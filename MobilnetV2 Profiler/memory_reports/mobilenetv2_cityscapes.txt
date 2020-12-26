@@ -1,0 +1,323 @@
+Element type                                            Size  Used MEM
+-------------------------------------------------------------------------------
+Storage on cuda:0
+Tensor0                                                 (1,)   512.00B
+Tensor1                                                 (1,)   512.00B
+Tensor2                                                 (1,)   512.00B
+Tensor3                                                 (1,)   512.00B
+Tensor4                                                 (1,)   512.00B
+Tensor5                                                 (1,)   512.00B
+Tensor6                                                 (1,)   512.00B
+Tensor7                                                 (1,)   512.00B
+Tensor8                                                 (1,)   512.00B
+Tensor9                                                 (1,)   512.00B
+Tensor10                                                (1,)   512.00B
+Tensor11                                                (1,)   512.00B
+Tensor12                                                (1,)   512.00B
+Tensor13                                                (1,)   512.00B
+Tensor14                                                (1,)   512.00B
+Tensor15                                                (1,)   512.00B
+Tensor16                                                (1,)   512.00B
+Tensor17                                                (1,)   512.00B
+Tensor18                                                (1,)   512.00B
+Tensor19                                                (1,)   512.00B
+Tensor20                                                (1,)   512.00B
+Tensor21                                                (1,)   512.00B
+Tensor22                                                (1,)   512.00B
+Tensor23                                                (1,)   512.00B
+Tensor24                                                (1,)   512.00B
+Tensor25                                                (1,)   512.00B
+Tensor26                                                (1,)   512.00B
+Tensor27                                                (1,)   512.00B
+Tensor28                                                (1,)   512.00B
+Tensor29                                                (1,)   512.00B
+Tensor30                                                (1,)   512.00B
+Tensor31                                                (1,)   512.00B
+Tensor32                                                (1,)   512.00B
+Tensor33                                                (1,)   512.00B
+Tensor34                                                (1,)   512.00B
+Tensor35                                                (1,)   512.00B
+Tensor36                                                (1,)   512.00B
+Tensor37                                                (1,)   512.00B
+Tensor38                                                (1,)   512.00B
+Tensor39                                                (1,)   512.00B
+Tensor40                                                (1,)   512.00B
+Tensor41                                                (1,)   512.00B
+Tensor42                                                (1,)   512.00B
+Tensor43                                                (1,)   512.00B
+Tensor44                                                (1,)   512.00B
+Tensor45                                                (1,)   512.00B
+Tensor46                                                (1,)   512.00B
+Tensor47                                                (1,)   512.00B
+Tensor48                                                (1,)   512.00B
+Tensor49                                                (1,)   512.00B
+Tensor50                                                (1,)   512.00B
+Tensor51                                                (1,)   512.00B
+features.15.conv.0.1.weight                           (960,)     4.00K
+features.11.conv.0.0.weight                  (384, 64, 1, 1)    96.00K
+features.15.conv.0.0.weight                 (960, 160, 1, 1)   600.00K
+features.11.conv.0.1.weight                           (384,)     1.50K
+features.11.conv.0.1.bias                             (384,)     1.50K
+features.11.conv.2.weight                    (96, 384, 1, 1)   144.00K
+features.11.conv.3.weight                              (96,)   512.00B
+features.11.conv.3.bias                                (96,)   512.00B
+features.12.conv.2.weight                    (96, 576, 1, 1)   216.00K
+features.12.conv.3.weight                              (96,)   512.00B
+features.12.conv.3.bias                                (96,)   512.00B
+features.13.conv.2.weight                    (96, 576, 1, 1)   216.00K
+features.13.conv.3.weight                              (96,)   512.00B
+features.13.conv.3.bias                                (96,)   512.00B
+features.14.conv.2.weight                   (160, 576, 1, 1)   360.00K
+features.14.conv.3.weight                             (160,)     1.00K
+features.14.conv.3.bias                               (160,)     1.00K
+features.11.conv.1.0.weight                   (384, 1, 3, 3)    13.50K
+features.11.conv.1.1.weight                           (384,)     1.50K
+features.11.conv.1.1.bias                             (384,)     1.50K
+features.12.conv.0.0.weight                  (576, 96, 1, 1)   216.00K
+features.12.conv.0.1.weight                           (576,)     2.50K
+features.12.conv.0.1.bias                             (576,)     2.50K
+features.12.conv.1.0.weight                   (576, 1, 3, 3)    20.50K
+features.12.conv.1.1.weight                           (576,)     2.50K
+features.12.conv.1.1.bias                             (576,)     2.50K
+features.13.conv.0.0.weight                  (576, 96, 1, 1)   216.00K
+features.13.conv.0.1.weight                           (576,)     2.50K
+features.13.conv.0.1.bias                             (576,)     2.50K
+features.13.conv.1.0.weight                   (576, 1, 3, 3)    20.50K
+features.13.conv.1.1.weight                           (576,)     2.50K
+features.13.conv.1.1.bias                             (576,)     2.50K
+features.14.conv.0.0.weight                  (576, 96, 1, 1)   216.00K
+features.14.conv.0.1.weight                           (576,)     2.50K
+features.14.conv.0.1.bias                             (576,)     2.50K
+features.14.conv.1.0.weight                   (576, 1, 3, 3)    20.50K
+features.14.conv.1.1.weight                           (576,)     2.50K
+features.14.conv.1.1.bias                             (576,)     2.50K
+features.15.conv.0.1.bias                             (960,)     4.00K
+Tensor52                                               (32,)   512.00B
+Tensor53                                               (32,)   512.00B
+Tensor54                                               (32,)   512.00B
+Tensor55                                               (32,)   512.00B
+Tensor56                                               (16,)   512.00B
+Tensor57                                               (16,)   512.00B
+Tensor58                                               (96,)   512.00B
+Tensor59                                               (96,)   512.00B
+Tensor60                                               (96,)   512.00B
+Tensor61                                               (96,)   512.00B
+Tensor62                                               (24,)   512.00B
+Tensor63                                               (24,)   512.00B
+Tensor64                                              (144,)     1.00K
+Tensor65                                              (144,)     1.00K
+Tensor66                                              (144,)     1.00K
+Tensor67                                              (144,)     1.00K
+Tensor68                                               (24,)   512.00B
+Tensor69                                               (24,)   512.00B
+Tensor70                                              (144,)     1.00K
+Tensor71                                              (144,)     1.00K
+Tensor72                                              (144,)     1.00K
+Tensor73                                              (144,)     1.00K
+Tensor74                                               (32,)   512.00B
+Tensor75                                               (32,)   512.00B
+Tensor76                                              (192,)     1.00K
+Tensor77                                              (192,)     1.00K
+Tensor78                                              (192,)     1.00K
+Tensor79                                              (192,)     1.00K
+Tensor80                                               (32,)   512.00B
+Tensor81                                               (32,)   512.00B
+Tensor82                                              (192,)     1.00K
+Tensor83                                              (192,)     1.00K
+Tensor84                                              (192,)     1.00K
+Tensor85                                              (192,)     1.00K
+Tensor86                                               (32,)   512.00B
+Tensor87                                               (32,)   512.00B
+Tensor88                                              (192,)     1.00K
+Tensor89                                              (192,)     1.00K
+Tensor90                                              (192,)     1.00K
+Tensor91                                              (192,)     1.00K
+Tensor92                                               (64,)   512.00B
+Tensor93                                               (64,)   512.00B
+Tensor94                                              (384,)     1.50K
+Tensor95                                              (384,)     1.50K
+Tensor96                                              (384,)     1.50K
+Tensor97                                              (384,)     1.50K
+Tensor98                                               (64,)   512.00B
+Tensor99                                               (64,)   512.00B
+Tensor100                                             (384,)     1.50K
+Tensor101                                             (384,)     1.50K
+Tensor102                                             (384,)     1.50K
+Tensor103                                             (384,)     1.50K
+Tensor104                                              (64,)   512.00B
+Tensor105                                              (64,)   512.00B
+Tensor106                                             (384,)     1.50K
+Tensor107                                             (384,)     1.50K
+Tensor108                                             (384,)     1.50K
+Tensor109                                             (384,)     1.50K
+Tensor110                                              (64,)   512.00B
+Tensor111                                              (64,)   512.00B
+Tensor112                                             (384,)     1.50K
+Tensor113                                             (384,)     1.50K
+Tensor114                                             (384,)     1.50K
+Tensor115                                             (384,)     1.50K
+Tensor116                                              (96,)   512.00B
+Tensor117                                              (96,)   512.00B
+Tensor118                                             (576,)     2.50K
+Tensor119                                             (576,)     2.50K
+Tensor120                                             (576,)     2.50K
+Tensor121                                             (576,)     2.50K
+Tensor122                                              (96,)   512.00B
+Tensor123                                              (96,)   512.00B
+Tensor124                                             (576,)     2.50K
+Tensor125                                             (576,)     2.50K
+Tensor126                                             (576,)     2.50K
+Tensor127                                             (576,)     2.50K
+Tensor128                                              (96,)   512.00B
+Tensor129                                              (96,)   512.00B
+Tensor130                                             (576,)     2.50K
+Tensor131                                             (576,)     2.50K
+Tensor132                                             (576,)     2.50K
+Tensor133                                             (576,)     2.50K
+Tensor134                                             (160,)     1.00K
+Tensor135                                             (160,)     1.00K
+Tensor136                                             (960,)     4.00K
+Tensor137                                             (960,)     4.00K
+features.15.conv.2.weight                   (160, 960, 1, 1)   600.00K
+features.15.conv.3.weight                             (160,)     1.00K
+features.15.conv.3.bias                               (160,)     1.00K
+Tensor138                                             (160,)     1.00K
+Tensor139                                             (160,)     1.00K
+classifier.1.weight                             (1000, 1280)     4.88M
+classifier.1.bias                                    (1000,)     4.00K
+features.15.conv.1.0.weight                   (960, 1, 3, 3)    34.00K
+features.15.conv.1.1.weight                           (960,)     4.00K
+features.15.conv.1.1.bias                             (960,)     4.00K
+Tensor140                                             (960,)     4.00K
+Tensor141                                             (960,)     4.00K
+features.18.0.weight                       (1280, 320, 1, 1)     1.56M
+features.18.1.weight                                 (1280,)     5.00K
+features.18.1.bias                                   (1280,)     5.00K
+Tensor142                                            (1280,)     5.00K
+Tensor143                                            (1280,)     5.00K
+features.16.conv.2.weight                   (160, 960, 1, 1)   600.00K
+features.16.conv.3.weight                             (160,)     1.00K
+features.16.conv.3.bias                               (160,)     1.00K
+Tensor144                                             (160,)     1.00K
+Tensor145                                             (160,)     1.00K
+features.17.conv.2.weight                   (320, 960, 1, 1)     1.17M
+features.17.conv.3.weight                             (320,)     1.50K
+features.17.conv.3.bias                               (320,)     1.50K
+Tensor146                                             (320,)     1.50K
+Tensor147                                             (320,)     1.50K
+features.16.conv.0.0.weight                 (960, 160, 1, 1)   600.00K
+features.16.conv.0.1.weight                           (960,)     4.00K
+features.16.conv.0.1.bias                             (960,)     4.00K
+Tensor148                                             (960,)     4.00K
+Tensor149                                             (960,)     4.00K
+features.16.conv.1.0.weight                   (960, 1, 3, 3)    34.00K
+features.16.conv.1.1.weight                           (960,)     4.00K
+features.16.conv.1.1.bias                             (960,)     4.00K
+Tensor150                                             (960,)     4.00K
+Tensor151                                             (960,)     4.00K
+features.17.conv.0.0.weight                 (960, 160, 1, 1)   600.00K
+features.17.conv.0.1.weight                           (960,)     4.00K
+features.17.conv.0.1.bias                             (960,)     4.00K
+Tensor152                                             (960,)     4.00K
+Tensor153                                             (960,)     4.00K
+features.17.conv.1.0.weight                   (960, 1, 3, 3)    34.00K
+features.17.conv.1.1.weight                           (960,)     4.00K
+features.17.conv.1.1.bias                             (960,)     4.00K
+Tensor154                                             (960,)     4.00K
+Tensor155                                             (960,)     4.00K
+Tensor156                                 (1, 3, 1024, 2048)    24.00M
+features.1.conv.1.weight                      (16, 32, 1, 1)     2.00K
+features.1.conv.2.weight                               (16,)   512.00B
+features.1.conv.2.bias                                 (16,)   512.00B
+features.0.0.weight                            (32, 3, 3, 3)     3.50K
+features.0.1.weight                                    (32,)   512.00B
+features.0.1.bias                                      (32,)   512.00B
+features.1.conv.0.0.weight                     (32, 1, 3, 3)     1.50K
+features.1.conv.0.1.weight                             (32,)   512.00B
+features.1.conv.0.1.bias                               (32,)   512.00B
+features.2.conv.2.weight                      (24, 96, 1, 1)     9.00K
+features.2.conv.3.weight                               (24,)   512.00B
+features.2.conv.3.bias                                 (24,)   512.00B
+features.3.conv.2.weight                     (24, 144, 1, 1)    13.50K
+features.3.conv.3.weight                               (24,)   512.00B
+features.3.conv.3.bias                                 (24,)   512.00B
+features.4.conv.2.weight                     (32, 144, 1, 1)    18.00K
+features.4.conv.3.weight                               (32,)   512.00B
+features.4.conv.3.bias                                 (32,)   512.00B
+features.5.conv.2.weight                     (32, 192, 1, 1)    24.00K
+features.5.conv.3.weight                               (32,)   512.00B
+features.5.conv.3.bias                                 (32,)   512.00B
+features.3.conv.0.0.weight                   (144, 24, 1, 1)    13.50K
+features.3.conv.0.1.weight                            (144,)     1.00K
+features.3.conv.0.1.bias                              (144,)     1.00K
+features.3.conv.1.0.weight                    (144, 1, 3, 3)     5.50K
+features.3.conv.1.1.weight                            (144,)     1.00K
+features.3.conv.1.1.bias                              (144,)     1.00K
+features.4.conv.0.0.weight                   (144, 24, 1, 1)    13.50K
+features.4.conv.0.1.weight                            (144,)     1.00K
+features.4.conv.0.1.bias                              (144,)     1.00K
+features.4.conv.1.0.weight                    (144, 1, 3, 3)     5.50K
+features.4.conv.1.1.weight                            (144,)     1.00K
+features.4.conv.1.1.bias                              (144,)     1.00K
+features.5.conv.0.0.weight                   (192, 32, 1, 1)    24.00K
+features.5.conv.0.1.weight                            (192,)     1.00K
+features.5.conv.0.1.bias                              (192,)     1.00K
+features.5.conv.1.0.weight                    (192, 1, 3, 3)     7.00K
+features.5.conv.1.1.weight                            (192,)     1.00K
+features.5.conv.1.1.bias                              (192,)     1.00K
+features.6.conv.2.weight                     (32, 192, 1, 1)    24.00K
+features.6.conv.3.weight                               (32,)   512.00B
+features.6.conv.3.bias                                 (32,)   512.00B
+features.7.conv.2.weight                     (64, 192, 1, 1)    48.00K
+features.7.conv.3.weight                               (64,)   512.00B
+features.7.conv.3.bias                                 (64,)   512.00B
+features.8.conv.2.weight                     (64, 384, 1, 1)    96.00K
+features.8.conv.3.weight                               (64,)   512.00B
+features.8.conv.3.bias                                 (64,)   512.00B
+features.9.conv.2.weight                     (64, 384, 1, 1)    96.00K
+features.9.conv.3.weight                               (64,)   512.00B
+features.9.conv.3.bias                                 (64,)   512.00B
+features.10.conv.2.weight                    (64, 384, 1, 1)    96.00K
+features.10.conv.3.weight                              (64,)   512.00B
+features.10.conv.3.bias                                (64,)   512.00B
+features.2.conv.0.0.weight                    (96, 16, 1, 1)     6.00K
+features.2.conv.0.1.weight                             (96,)   512.00B
+features.2.conv.0.1.bias                               (96,)   512.00B
+features.2.conv.1.0.weight                     (96, 1, 3, 3)     3.50K
+features.2.conv.1.1.weight                             (96,)   512.00B
+features.2.conv.1.1.bias                               (96,)   512.00B
+features.6.conv.0.0.weight                   (192, 32, 1, 1)    24.00K
+features.6.conv.0.1.weight                            (192,)     1.00K
+features.6.conv.0.1.bias                              (192,)     1.00K
+features.6.conv.1.0.weight                    (192, 1, 3, 3)     7.00K
+features.6.conv.1.1.weight                            (192,)     1.00K
+features.6.conv.1.1.bias                              (192,)     1.00K
+features.7.conv.0.0.weight                   (192, 32, 1, 1)    24.00K
+features.7.conv.0.1.weight                            (192,)     1.00K
+features.7.conv.0.1.bias                              (192,)     1.00K
+features.7.conv.1.0.weight                    (192, 1, 3, 3)     7.00K
+features.7.conv.1.1.weight                            (192,)     1.00K
+features.7.conv.1.1.bias                              (192,)     1.00K
+features.8.conv.0.0.weight                   (384, 64, 1, 1)    96.00K
+features.8.conv.0.1.weight                            (384,)     1.50K
+features.8.conv.0.1.bias                              (384,)     1.50K
+features.8.conv.1.0.weight                    (384, 1, 3, 3)    13.50K
+features.8.conv.1.1.weight                            (384,)     1.50K
+features.8.conv.1.1.bias                              (384,)     1.50K
+features.9.conv.0.0.weight                   (384, 64, 1, 1)    96.00K
+features.9.conv.0.1.weight                            (384,)     1.50K
+features.9.conv.0.1.bias                              (384,)     1.50K
+features.9.conv.1.0.weight                    (384, 1, 3, 3)    13.50K
+features.9.conv.1.1.weight                            (384,)     1.50K
+features.9.conv.1.1.bias                              (384,)     1.50K
+features.10.conv.0.0.weight                  (384, 64, 1, 1)    96.00K
+features.10.conv.0.1.weight                           (384,)     1.50K
+features.10.conv.0.1.bias                             (384,)     1.50K
+features.10.conv.1.0.weight                   (384, 1, 3, 3)    13.50K
+features.10.conv.1.1.weight                           (384,)     1.50K
+features.10.conv.1.1.bias                             (384,)     1.50K
+-------------------------------------------------------------------------------
+Total Tensors: 9830492 	Used Memory: 37.58M
+The allocated memory on cuda:0: 37.58M
+-------------------------------------------------------------------------------
+Parameters: 3504872

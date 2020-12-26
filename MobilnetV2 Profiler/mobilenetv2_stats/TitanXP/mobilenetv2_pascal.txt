@@ -1,0 +1,1 @@
+Average Execution Time for MobileNetV2 with input shape: [1, 3, 500, 334] is 5.795 ms with std = 0.144 ms

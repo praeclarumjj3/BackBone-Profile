@@ -1,0 +1,23 @@
+Average Execution Time for Conv2D with kernel_size=3, stride=2 and input shape: [1, 3, 500, 334] is 0.329 ms with std = 0.014 ms
+Average Execution Time for Inverted Residual Block at position 1 with input shape: [1, 32, 250, 167] is 0.497 ms with std = 0.027 ms
+Average Execution Time for Inverted Residual Block at position 2 with input shape: [1, 16, 250, 167] is 0.605 ms with std = 0.024 ms
+Average Execution Time for Inverted Residual Block at position 3 with input shape: [1, 24, 125, 84] is 0.466 ms with std = 0.094 ms
+Average Execution Time for Inverted Residual Block at position 4 with input shape: [1, 24, 125, 84] is 0.36 ms with std = 0.011 ms
+Average Execution Time for Inverted Residual Block at position 5 with input shape: [1, 32, 63, 42] is 0.37 ms with std = 0.008 ms
+Average Execution Time for Inverted Residual Block at position 6 with input shape: [1, 32, 63, 42] is 0.368 ms with std = 0.012 ms
+Average Execution Time for Inverted Residual Block at position 7 with input shape: [1, 32, 63, 42] is 0.356 ms with std = 0.01 ms
+Average Execution Time for Inverted Residual Block at position 8 with input shape: [1, 64, 32, 21] is 0.367 ms with std = 0.009 ms
+Average Execution Time for Inverted Residual Block at position 9 with input shape: [1, 64, 32, 21] is 0.366 ms with std = 0.008 ms
+Average Execution Time for Inverted Residual Block at position 10 with input shape: [1, 64, 32, 21] is 0.365 ms with std = 0.008 ms
+Average Execution Time for Inverted Residual Block at position 11 with input shape: [1, 64, 32, 21] is 0.358 ms with std = 0.071 ms
+Average Execution Time for Inverted Residual Block at position 12 with input shape: [1, 96, 32, 21] is 0.366 ms with std = 0.009 ms
+Average Execution Time for Inverted Residual Block at position 13 with input shape: [1, 96, 32, 21] is 0.365 ms with std = 0.008 ms
+Average Execution Time for Inverted Residual Block at position 14 with input shape: [1, 96, 32, 21] is 0.357 ms with std = 0.009 ms
+Average Execution Time for Inverted Residual Block at position 15 with input shape: [1, 160, 16, 11] is 0.363 ms with std = 0.008 ms
+Average Execution Time for Inverted Residual Block at position 16 with input shape: [1, 160, 16, 11] is 0.364 ms with std = 0.009 ms
+Average Execution Time for Inverted Residual Block at position 17 with input shape: [1, 160, 16, 11] is 0.352 ms with std = 0.008 ms
+Average Execution Time for ConvLast with kernel_size=1, stride=1 and input shape: [1, 320, 16, 11] is 0.149 ms with std = 0.069 ms
+Average Execution Time for AvgPool with input shape: [1, 1280, 16, 11] is 0.044 ms with std = 0.003 ms
+Average Execution Time for Classifier with Dropout=0.2 and dim=1280 input shape: [1, 1280] is 0.102 ms with std = 0.004 ms
+
+Average Execution Time for MobileNetV2 with input shape: [1, 3, 500, 334] is 7.857 ms with std = 0.204 ms
