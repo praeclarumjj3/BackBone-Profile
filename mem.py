@@ -429,11 +429,11 @@ if __name__ == '__main__':
             torch.cuda.empty_cache()
         exit()
 
+    reporter = MemReporter(model)
     with torch.no_grad():    
         model(img)
     torch.cuda.empty_cache()
 
-    reporter = MemReporter()
     reporter.report(verbose=True)
     
     total_params = sum(p.numel() for p in model.parameters())

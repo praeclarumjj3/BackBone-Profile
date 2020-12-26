@@ -1,637 +1,636 @@
 Element type                                            Size  Used MEM
 -------------------------------------------------------------------------------
 Storage on cuda:0
-Parameter0                                 (256, 1024, 1, 1)     1.00M
-Parameter1                                 (1024, 256, 1, 1)     1.00M
-Parameter2                                            (256,)     1.00K
-Parameter3                                            (256,)     1.00K
-Parameter4                                  (256, 256, 3, 3)     2.25M
-Parameter5                                            (256,)     1.00K
-Parameter6                                            (256,)     1.00K
-Parameter7                                 (1024, 256, 1, 1)     1.00M
-Parameter8                                           (1024,)     4.00K
-Parameter9                                           (1024,)     4.00K
-Parameter10                                (256, 1024, 1, 1)     1.00M
-Parameter11                                           (256,)     1.00K
-Parameter12                                           (256,)     1.00K
-Parameter13                                 (256, 256, 3, 3)     2.25M
-Parameter14                                           (256,)     1.00K
-Parameter15                                           (256,)     1.00K
-Parameter16                                (1024, 256, 1, 1)     1.00M
-Parameter17                                          (1024,)     4.00K
-Parameter18                                          (1024,)     4.00K
-Parameter19                                (256, 1024, 1, 1)     1.00M
-Parameter20                                           (256,)     1.00K
-Parameter21                                           (256,)     1.00K
-Parameter22                                 (256, 256, 3, 3)     2.25M
-Parameter23                                           (256,)     1.00K
-Parameter24                                           (256,)     1.00K
-Parameter25                                (1024, 256, 1, 1)     1.00M
-Parameter26                                          (1024,)     4.00K
-Parameter27                                          (1024,)     4.00K
-Parameter28                                (256, 1024, 1, 1)     1.00M
-Parameter29                                           (256,)     1.00K
-Parameter30                                           (256,)     1.00K
-Parameter31                                 (256, 256, 3, 3)     2.25M
-Parameter32                                           (256,)     1.00K
-Parameter33                                           (256,)     1.00K
-Parameter34                                (1024, 256, 1, 1)     1.00M
-Parameter35                                          (1024,)     4.00K
-Parameter36                                          (1024,)     4.00K
-Parameter37                                (256, 1024, 1, 1)     1.00M
-Parameter38                                           (256,)     1.00K
-Parameter39                                           (256,)     1.00K
-Parameter40                                 (256, 256, 3, 3)     2.25M
-Parameter41                                           (256,)     1.00K
-Parameter42                                           (256,)     1.00K
-Parameter43                                (1024, 256, 1, 1)     1.00M
-Parameter44                                          (1024,)     4.00K
-Parameter45                                          (1024,)     4.00K
-Parameter46                                (256, 1024, 1, 1)     1.00M
-Parameter47                                           (256,)     1.00K
-Parameter48                                           (256,)     1.00K
-Parameter49                                 (256, 256, 3, 3)     2.25M
-Parameter50                                           (256,)     1.00K
-Parameter51                                           (256,)     1.00K
-Parameter52                                          (1024,)     4.00K
-Parameter53                                          (1024,)     4.00K
-Parameter54                                (256, 1024, 1, 1)     1.00M
-Parameter55                                           (256,)     1.00K
-Parameter56                                           (256,)     1.00K
-Parameter57                                 (256, 256, 3, 3)     2.25M
-Parameter58                                           (256,)     1.00K
-Parameter59                                           (256,)     1.00K
-Parameter60                                (1024, 256, 1, 1)     1.00M
-Parameter61                                          (1024,)     4.00K
-Parameter62                                          (1024,)     4.00K
-Parameter63                                (256, 1024, 1, 1)     1.00M
-Parameter64                                           (256,)     1.00K
-Parameter65                                           (256,)     1.00K
-Parameter66                                 (256, 256, 3, 3)     2.25M
-Parameter67                                           (256,)     1.00K
-Parameter68                                           (256,)     1.00K
-Parameter69                                (1024, 256, 1, 1)     1.00M
-Parameter70                                          (1024,)     4.00K
-Parameter71                                          (1024,)     4.00K
-Parameter72                                (256, 1024, 1, 1)     1.00M
-Parameter73                                           (256,)     1.00K
-Parameter74                                           (256,)     1.00K
-Parameter75                                 (256, 256, 3, 3)     2.25M
-Parameter76                                           (256,)     1.00K
-Parameter77                                           (256,)     1.00K
-Parameter78                                (1024, 256, 1, 1)     1.00M
-Parameter79                                          (1024,)     4.00K
-Parameter80                                          (1024,)     4.00K
-Parameter81                                (256, 1024, 1, 1)     1.00M
-Parameter82                                           (256,)     1.00K
-Parameter83                                           (256,)     1.00K
-Parameter84                                 (256, 256, 3, 3)     2.25M
-Parameter85                                           (256,)     1.00K
-Parameter86                                           (256,)     1.00K
-Parameter87                                (1024, 256, 1, 1)     1.00M
-Parameter88                                          (1024,)     4.00K
-Parameter89                                          (1024,)     4.00K
-Parameter90                                (256, 1024, 1, 1)     1.00M
-Parameter91                                           (256,)     1.00K
-Parameter92                                           (256,)     1.00K
-Parameter93                                 (256, 256, 3, 3)     2.25M
-Parameter94                                           (256,)     1.00K
-Parameter95                                           (256,)     1.00K
-Parameter96                                (1024, 256, 1, 1)     1.00M
-Parameter97                                          (1024,)     4.00K
-Parameter98                                          (1024,)     4.00K
-Parameter99                                (256, 1024, 1, 1)     1.00M
-Parameter100                                          (256,)     1.00K
-Parameter101                                          (256,)     1.00K
-Parameter102                                (256, 256, 3, 3)     2.25M
-Parameter103                                          (256,)     1.00K
-Parameter104                                          (256,)     1.00K
-Parameter105                               (1024, 256, 1, 1)     1.00M
-Parameter106                                         (1024,)     4.00K
-Parameter107                                         (1024,)     4.00K
-Parameter108                               (256, 1024, 1, 1)     1.00M
-Parameter109                                          (256,)     1.00K
-Parameter110                                          (256,)     1.00K
-Parameter111                                (256, 256, 3, 3)     2.25M
-Parameter112                                          (256,)     1.00K
-Parameter113                                          (256,)     1.00K
-Parameter114                               (1024, 256, 1, 1)     1.00M
-Parameter115                                         (1024,)     4.00K
-Parameter116                                         (1024,)     4.00K
-Parameter117                               (256, 1024, 1, 1)     1.00M
-Parameter118                                          (256,)     1.00K
-Parameter119                                          (256,)     1.00K
-Parameter120                                (256, 256, 3, 3)     2.25M
-Parameter121                                          (256,)     1.00K
-Parameter122                                          (256,)     1.00K
-Parameter123                               (1024, 256, 1, 1)     1.00M
-Parameter124                                         (1024,)     4.00K
-Parameter125                                         (1024,)     4.00K
-Parameter126                               (256, 1024, 1, 1)     1.00M
-Parameter127                                          (256,)     1.00K
-Parameter128                                          (256,)     1.00K
-Parameter129                                (256, 256, 3, 3)     2.25M
-Parameter130                                          (256,)     1.00K
-Parameter131                                          (256,)     1.00K
-Parameter132                               (1024, 256, 1, 1)     1.00M
-Parameter133                                         (1024,)     4.00K
-Parameter134                                         (1024,)     4.00K
-Parameter135                               (256, 1024, 1, 1)     1.00M
-Parameter136                                          (256,)     1.00K
-Parameter137                                          (256,)     1.00K
-Parameter138                                (256, 256, 3, 3)     2.25M
-Parameter139                                          (256,)     1.00K
-Parameter140                                          (256,)     1.00K
-Parameter141                               (1024, 256, 1, 1)     1.00M
-Parameter142                                         (1024,)     4.00K
-Parameter143                                         (1024,)     4.00K
-Parameter144                               (256, 1024, 1, 1)     1.00M
-Parameter145                                          (256,)     1.00K
-Parameter146                                          (256,)     1.00K
-Parameter147                                (256, 256, 3, 3)     2.25M
-Parameter148                                          (256,)     1.00K
-Parameter149                                          (256,)     1.00K
-Parameter150                               (1024, 256, 1, 1)     1.00M
-Parameter151                                         (1024,)     4.00K
-Parameter152                                         (1024,)     4.00K
-Parameter153                               (256, 1024, 1, 1)     1.00M
-Parameter154                                          (256,)     1.00K
-Parameter155                                          (256,)     1.00K
-Parameter156                                (256, 256, 3, 3)     2.25M
-Parameter157                                          (256,)     1.00K
-Parameter158                                          (256,)     1.00K
-Parameter159                               (1024, 256, 1, 1)     1.00M
-Parameter160                                         (1024,)     4.00K
-Parameter161                                         (1024,)     4.00K
-Parameter162                               (256, 1024, 1, 1)     1.00M
-Parameter163                                          (256,)     1.00K
-Parameter164                                          (256,)     1.00K
-Parameter165                                (256, 256, 3, 3)     2.25M
-Parameter166                                          (256,)     1.00K
-Parameter167                                          (256,)     1.00K
-Parameter168                               (1024, 256, 1, 1)     1.00M
-Parameter169                                         (1024,)     4.00K
-Parameter170                                         (1024,)     4.00K
-Parameter171                               (512, 1024, 1, 1)     2.00M
-Parameter172                                          (512,)     2.00K
-Parameter173                                          (512,)     2.00K
-Parameter174                                (512, 512, 3, 3)     9.00M
-Parameter175                                          (512,)     2.00K
-Parameter176                                          (512,)     2.00K
-Parameter177                               (2048, 512, 1, 1)     4.00M
-Parameter178                                         (2048,)     8.00K
-Parameter179                                         (2048,)     8.00K
-Parameter180                               (512, 2048, 1, 1)     4.00M
-Parameter181                                          (512,)     2.00K
-Parameter182                                          (512,)     2.00K
-Parameter183                                (512, 512, 3, 3)     9.00M
-Parameter184                                          (512,)     2.00K
-Parameter185                                          (512,)     2.00K
-Parameter186                               (2048, 512, 1, 1)     4.00M
-Parameter187                                         (2048,)     8.00K
-Parameter188                                         (2048,)     8.00K
-Parameter189                               (512, 2048, 1, 1)     4.00M
-Parameter190                                          (512,)     2.00K
-Parameter191                                          (512,)     2.00K
-Parameter192                                (512, 512, 3, 3)     9.00M
-Parameter193                                          (512,)     2.00K
-Parameter194                                          (512,)     2.00K
-Parameter195                               (2048, 512, 1, 1)     4.00M
-Parameter196                                         (2048,)     8.00K
-Parameter197                                         (2048,)     8.00K
-Parameter198                              (2048, 1024, 1, 1)     8.00M
-Parameter199                                         (2048,)     8.00K
-Parameter200                                         (2048,)     8.00K
-Parameter201                                    (1000, 2048)     7.81M
-Parameter202                                         (1000,)     4.00K
-Tensor203                                              (64,)   512.00B
-Tensor204                                              (64,)   512.00B
-Tensor205                                               (1,)   512.00B
-Tensor206                                              (64,)   512.00B
-Tensor207                                              (64,)   512.00B
-Tensor208                                               (1,)   512.00B
-Tensor209                                              (64,)   512.00B
-Tensor210                                              (64,)   512.00B
-Tensor211                                               (1,)   512.00B
-Tensor212                                             (256,)     1.00K
+module.layer3.4.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.9.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.4.bn1.weight                            (256,)     1.00K
+module.layer3.4.bn1.bias                              (256,)     1.00K
+module.layer3.4.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.4.bn2.weight                            (256,)     1.00K
+module.layer3.4.bn2.bias                              (256,)     1.00K
+module.layer3.4.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.4.bn3.weight                           (1024,)     4.00K
+module.layer3.4.bn3.bias                             (1024,)     4.00K
+module.layer3.5.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.5.bn1.weight                            (256,)     1.00K
+module.layer3.5.bn1.bias                              (256,)     1.00K
+module.layer3.5.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.5.bn2.weight                            (256,)     1.00K
+module.layer3.5.bn2.bias                              (256,)     1.00K
+module.layer3.5.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.5.bn3.weight                           (1024,)     4.00K
+module.layer3.5.bn3.bias                             (1024,)     4.00K
+module.layer3.6.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.6.bn1.weight                            (256,)     1.00K
+module.layer3.6.bn1.bias                              (256,)     1.00K
+module.layer3.6.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.6.bn2.weight                            (256,)     1.00K
+module.layer3.6.bn2.bias                              (256,)     1.00K
+module.layer3.6.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.6.bn3.weight                           (1024,)     4.00K
+module.layer3.6.bn3.bias                             (1024,)     4.00K
+module.layer3.7.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.7.bn1.weight                            (256,)     1.00K
+module.layer3.7.bn1.bias                              (256,)     1.00K
+module.layer3.7.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.7.bn2.weight                            (256,)     1.00K
+module.layer3.7.bn2.bias                              (256,)     1.00K
+module.layer3.7.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.7.bn3.weight                           (1024,)     4.00K
+module.layer3.7.bn3.bias                             (1024,)     4.00K
+module.layer3.8.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.8.bn1.weight                            (256,)     1.00K
+module.layer3.8.bn1.bias                              (256,)     1.00K
+module.layer3.8.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.8.bn2.weight                            (256,)     1.00K
+module.layer3.8.bn2.bias                              (256,)     1.00K
+module.layer3.8.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.8.bn3.weight                           (1024,)     4.00K
+module.layer3.8.bn3.bias                             (1024,)     4.00K
+module.layer3.9.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.9.bn1.weight                            (256,)     1.00K
+module.layer3.9.bn1.bias                              (256,)     1.00K
+module.layer3.9.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.9.bn2.weight                            (256,)     1.00K
+module.layer3.9.bn2.bias                              (256,)     1.00K
+module.layer3.9.bn3.weight                           (1024,)     4.00K
+module.layer3.9.bn3.bias                             (1024,)     4.00K
+module.layer3.10.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.10.bn1.weight                           (256,)     1.00K
+module.layer3.10.bn1.bias                             (256,)     1.00K
+module.layer3.10.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.10.bn2.weight                           (256,)     1.00K
+module.layer3.10.bn2.bias                             (256,)     1.00K
+module.layer3.10.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.10.bn3.weight                          (1024,)     4.00K
+module.layer3.10.bn3.bias                            (1024,)     4.00K
+module.layer3.11.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.11.bn1.weight                           (256,)     1.00K
+module.layer3.11.bn1.bias                             (256,)     1.00K
+module.layer3.11.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.11.bn2.weight                           (256,)     1.00K
+module.layer3.11.bn2.bias                             (256,)     1.00K
+module.layer3.11.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.11.bn3.weight                          (1024,)     4.00K
+module.layer3.11.bn3.bias                            (1024,)     4.00K
+module.layer3.12.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.12.bn1.weight                           (256,)     1.00K
+module.layer3.12.bn1.bias                             (256,)     1.00K
+module.layer3.12.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.12.bn2.weight                           (256,)     1.00K
+module.layer3.12.bn2.bias                             (256,)     1.00K
+module.layer3.12.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.12.bn3.weight                          (1024,)     4.00K
+module.layer3.12.bn3.bias                            (1024,)     4.00K
+module.layer3.13.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.13.bn1.weight                           (256,)     1.00K
+module.layer3.13.bn1.bias                             (256,)     1.00K
+module.layer3.13.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.13.bn2.weight                           (256,)     1.00K
+module.layer3.13.bn2.bias                             (256,)     1.00K
+module.layer3.13.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.13.bn3.weight                          (1024,)     4.00K
+module.layer3.13.bn3.bias                            (1024,)     4.00K
+module.layer3.14.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.14.bn1.weight                           (256,)     1.00K
+module.layer3.14.bn1.bias                             (256,)     1.00K
+module.layer3.14.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.14.bn2.weight                           (256,)     1.00K
+module.layer3.14.bn2.bias                             (256,)     1.00K
+module.layer3.14.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.14.bn3.weight                          (1024,)     4.00K
+module.layer3.14.bn3.bias                            (1024,)     4.00K
+module.layer3.15.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.15.bn1.weight                           (256,)     1.00K
+module.layer3.15.bn1.bias                             (256,)     1.00K
+module.layer3.15.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.15.bn2.weight                           (256,)     1.00K
+module.layer3.15.bn2.bias                             (256,)     1.00K
+module.layer3.15.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.15.bn3.weight                          (1024,)     4.00K
+module.layer3.15.bn3.bias                            (1024,)     4.00K
+module.layer3.16.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.16.bn1.weight                           (256,)     1.00K
+module.layer3.16.bn1.bias                             (256,)     1.00K
+module.layer3.16.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.16.bn2.weight                           (256,)     1.00K
+module.layer3.16.bn2.bias                             (256,)     1.00K
+module.layer3.16.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.16.bn3.weight                          (1024,)     4.00K
+module.layer3.16.bn3.bias                            (1024,)     4.00K
+module.layer3.17.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.17.bn1.weight                           (256,)     1.00K
+module.layer3.17.bn1.bias                             (256,)     1.00K
+module.layer3.17.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.17.bn2.weight                           (256,)     1.00K
+module.layer3.17.bn2.bias                             (256,)     1.00K
+module.layer3.17.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.17.bn3.weight                          (1024,)     4.00K
+module.layer3.17.bn3.bias                            (1024,)     4.00K
+module.layer3.18.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.18.bn1.weight                           (256,)     1.00K
+module.layer3.18.bn1.bias                             (256,)     1.00K
+module.layer3.18.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.18.bn2.weight                           (256,)     1.00K
+module.layer3.18.bn2.bias                             (256,)     1.00K
+module.layer3.18.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.18.bn3.weight                          (1024,)     4.00K
+module.layer3.18.bn3.bias                            (1024,)     4.00K
+module.layer3.19.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.19.bn1.weight                           (256,)     1.00K
+module.layer3.19.bn1.bias                             (256,)     1.00K
+module.layer3.19.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.19.bn2.weight                           (256,)     1.00K
+module.layer3.19.bn2.bias                             (256,)     1.00K
+module.layer3.19.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.19.bn3.weight                          (1024,)     4.00K
+module.layer3.19.bn3.bias                            (1024,)     4.00K
+module.layer3.20.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.20.bn1.weight                           (256,)     1.00K
+module.layer3.20.bn1.bias                             (256,)     1.00K
+module.layer3.20.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.20.bn2.weight                           (256,)     1.00K
+module.layer3.20.bn2.bias                             (256,)     1.00K
+module.layer3.20.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.20.bn3.weight                          (1024,)     4.00K
+module.layer3.20.bn3.bias                            (1024,)     4.00K
+module.layer3.21.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.21.bn1.weight                           (256,)     1.00K
+module.layer3.21.bn1.bias                             (256,)     1.00K
+module.layer3.21.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.21.bn2.weight                           (256,)     1.00K
+module.layer3.21.bn2.bias                             (256,)     1.00K
+module.layer3.21.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.21.bn3.weight                          (1024,)     4.00K
+module.layer3.21.bn3.bias                            (1024,)     4.00K
+module.layer3.22.conv1.weight              (256, 1024, 1, 1)     1.00M
+module.layer3.22.bn1.weight                           (256,)     1.00K
+module.layer3.22.bn1.bias                             (256,)     1.00K
+module.layer3.22.conv2.weight               (256, 256, 3, 3)     2.25M
+module.layer3.22.bn2.weight                           (256,)     1.00K
+module.layer3.22.bn2.bias                             (256,)     1.00K
+module.layer3.22.conv3.weight              (1024, 256, 1, 1)     1.00M
+module.layer3.22.bn3.weight                          (1024,)     4.00K
+module.layer3.22.bn3.bias                            (1024,)     4.00K
+module.layer4.0.conv1.weight               (512, 1024, 1, 1)     2.00M
+module.layer4.0.bn1.weight                            (512,)     2.00K
+module.layer4.0.bn1.bias                              (512,)     2.00K
+module.layer4.0.conv2.weight                (512, 512, 3, 3)     9.00M
+module.layer4.0.bn2.weight                            (512,)     2.00K
+module.layer4.0.bn2.bias                              (512,)     2.00K
+module.layer4.0.conv3.weight               (2048, 512, 1, 1)     4.00M
+module.layer4.0.bn3.weight                           (2048,)     8.00K
+module.layer4.0.bn3.bias                             (2048,)     8.00K
+module.layer4.1.conv1.weight               (512, 2048, 1, 1)     4.00M
+module.layer4.1.bn1.weight                            (512,)     2.00K
+module.layer4.1.bn1.bias                              (512,)     2.00K
+module.layer4.1.conv2.weight                (512, 512, 3, 3)     9.00M
+module.layer4.1.bn2.weight                            (512,)     2.00K
+module.layer4.1.bn2.bias                              (512,)     2.00K
+module.layer4.1.conv3.weight               (2048, 512, 1, 1)     4.00M
+module.layer4.1.bn3.weight                           (2048,)     8.00K
+module.layer4.1.bn3.bias                             (2048,)     8.00K
+module.layer4.2.conv1.weight               (512, 2048, 1, 1)     4.00M
+module.layer4.2.bn1.weight                            (512,)     2.00K
+module.layer4.2.bn1.bias                              (512,)     2.00K
+module.layer4.2.conv2.weight                (512, 512, 3, 3)     9.00M
+module.layer4.2.bn2.weight                            (512,)     2.00K
+module.layer4.2.bn2.bias                              (512,)     2.00K
+module.layer4.2.conv3.weight               (2048, 512, 1, 1)     4.00M
+module.layer4.2.bn3.weight                           (2048,)     8.00K
+module.layer4.2.bn3.bias                             (2048,)     8.00K
+module.layer4.0.downsample.0.weight       (2048, 1024, 1, 1)     8.00M
+module.layer4.0.downsample.1.weight                  (2048,)     8.00K
+module.layer4.0.downsample.1.bias                    (2048,)     8.00K
+module.fc.weight                                (1000, 2048)     7.81M
+module.fc.bias                                       (1000,)     4.00K
+Tensor0                                                (64,)   512.00B
+Tensor1                                                (64,)   512.00B
+Tensor2                                                 (1,)   512.00B
+Tensor3                                                (64,)   512.00B
+Tensor4                                                (64,)   512.00B
+Tensor5                                                 (1,)   512.00B
+Tensor6                                                (64,)   512.00B
+Tensor7                                                (64,)   512.00B
+Tensor8                                                 (1,)   512.00B
+Tensor9                                               (256,)     1.00K
+Tensor10                                              (256,)     1.00K
+Tensor11                                                (1,)   512.00B
+Tensor12                                              (256,)     1.00K
+Tensor13                                              (256,)     1.00K
+Tensor14                                                (1,)   512.00B
+Tensor15                                               (64,)   512.00B
+Tensor16                                               (64,)   512.00B
+Tensor17                                                (1,)   512.00B
+Tensor18                                               (64,)   512.00B
+Tensor19                                               (64,)   512.00B
+Tensor20                                                (1,)   512.00B
+Tensor21                                              (256,)     1.00K
+Tensor22                                              (256,)     1.00K
+Tensor23                                                (1,)   512.00B
+Tensor24                                               (64,)   512.00B
+Tensor25                                               (64,)   512.00B
+Tensor26                                                (1,)   512.00B
+Tensor27                                               (64,)   512.00B
+Tensor28                                               (64,)   512.00B
+Tensor29                                                (1,)   512.00B
+Tensor30                                              (256,)     1.00K
+Tensor31                                              (256,)     1.00K
+Tensor32                                                (1,)   512.00B
+Tensor33                                              (128,)   512.00B
+Tensor34                                              (128,)   512.00B
+Tensor35                                                (1,)   512.00B
+Tensor36                                              (128,)   512.00B
+Tensor37                                              (128,)   512.00B
+Tensor38                                                (1,)   512.00B
+Tensor39                                              (512,)     2.00K
+Tensor40                                              (512,)     2.00K
+Tensor41                                                (1,)   512.00B
+Tensor42                                              (512,)     2.00K
+Tensor43                                              (512,)     2.00K
+Tensor44                                                (1,)   512.00B
+Tensor45                                              (128,)   512.00B
+Tensor46                                              (128,)   512.00B
+Tensor47                                                (1,)   512.00B
+Tensor48                                              (128,)   512.00B
+Tensor49                                              (128,)   512.00B
+Tensor50                                                (1,)   512.00B
+Tensor51                                              (512,)     2.00K
+Tensor52                                              (512,)     2.00K
+Tensor53                                                (1,)   512.00B
+Tensor54                                              (128,)   512.00B
+Tensor55                                              (128,)   512.00B
+Tensor56                                                (1,)   512.00B
+Tensor57                                              (128,)   512.00B
+Tensor58                                              (128,)   512.00B
+Tensor59                                                (1,)   512.00B
+Tensor60                                              (512,)     2.00K
+Tensor61                                              (512,)     2.00K
+Tensor62                                                (1,)   512.00B
+Tensor63                                              (128,)   512.00B
+Tensor64                                              (128,)   512.00B
+Tensor65                                                (1,)   512.00B
+Tensor66                                              (128,)   512.00B
+Tensor67                                              (128,)   512.00B
+Tensor68                                                (1,)   512.00B
+Tensor69                                              (512,)     2.00K
+Tensor70                                              (512,)     2.00K
+Tensor71                                                (1,)   512.00B
+Tensor72                                              (256,)     1.00K
+Tensor73                                              (256,)     1.00K
+Tensor74                                                (1,)   512.00B
+Tensor75                                              (256,)     1.00K
+Tensor76                                              (256,)     1.00K
+Tensor77                                                (1,)   512.00B
+Tensor78                                             (1024,)     4.00K
+Tensor79                                             (1024,)     4.00K
+Tensor80                                                (1,)   512.00B
+Tensor81                                             (1024,)     4.00K
+Tensor82                                             (1024,)     4.00K
+Tensor83                                                (1,)   512.00B
+Tensor84                                              (256,)     1.00K
+Tensor85                                              (256,)     1.00K
+Tensor86                                                (1,)   512.00B
+Tensor87                                              (256,)     1.00K
+Tensor88                                              (256,)     1.00K
+Tensor89                                                (1,)   512.00B
+Tensor90                                             (1024,)     4.00K
+Tensor91                                             (1024,)     4.00K
+Tensor92                                                (1,)   512.00B
+Tensor93                                              (256,)     1.00K
+Tensor94                                              (256,)     1.00K
+Tensor95                                                (1,)   512.00B
+Tensor96                                              (256,)     1.00K
+Tensor97                                              (256,)     1.00K
+Tensor98                                                (1,)   512.00B
+Tensor99                                             (1024,)     4.00K
+Tensor100                                            (1024,)     4.00K
+Tensor101                                               (1,)   512.00B
+Tensor102                                             (256,)     1.00K
+Tensor103                                             (256,)     1.00K
+Tensor104                                               (1,)   512.00B
+Tensor105                                             (256,)     1.00K
+Tensor106                                             (256,)     1.00K
+Tensor107                                               (1,)   512.00B
+Tensor108                                            (1024,)     4.00K
+Tensor109                                            (1024,)     4.00K
+Tensor110                                               (1,)   512.00B
+Tensor111                                             (256,)     1.00K
+Tensor112                                             (256,)     1.00K
+Tensor113                                               (1,)   512.00B
+Tensor114                                             (256,)     1.00K
+Tensor115                                             (256,)     1.00K
+Tensor116                                               (1,)   512.00B
+Tensor117                                            (1024,)     4.00K
+Tensor118                                            (1024,)     4.00K
+Tensor119                                               (1,)   512.00B
+Tensor120                                             (256,)     1.00K
+Tensor121                                             (256,)     1.00K
+Tensor122                                               (1,)   512.00B
+Tensor123                                             (256,)     1.00K
+Tensor124                                             (256,)     1.00K
+Tensor125                                               (1,)   512.00B
+Tensor126                                            (1024,)     4.00K
+Tensor127                                            (1024,)     4.00K
+Tensor128                                               (1,)   512.00B
+Tensor129                                             (256,)     1.00K
+Tensor130                                             (256,)     1.00K
+Tensor131                                               (1,)   512.00B
+Tensor132                                             (256,)     1.00K
+Tensor133                                             (256,)     1.00K
+Tensor134                                               (1,)   512.00B
+Tensor135                                            (1024,)     4.00K
+Tensor136                                            (1024,)     4.00K
+Tensor137                                               (1,)   512.00B
+Tensor138                                             (256,)     1.00K
+Tensor139                                             (256,)     1.00K
+Tensor140                                               (1,)   512.00B
+Tensor141                                             (256,)     1.00K
+Tensor142                                             (256,)     1.00K
+Tensor143                                               (1,)   512.00B
+Tensor144                                            (1024,)     4.00K
+Tensor145                                            (1024,)     4.00K
+Tensor146                                               (1,)   512.00B
+Tensor147                                             (256,)     1.00K
+Tensor148                                             (256,)     1.00K
+Tensor149                                               (1,)   512.00B
+Tensor150                                             (256,)     1.00K
+Tensor151                                             (256,)     1.00K
+Tensor152                                               (1,)   512.00B
+Tensor153                                            (1024,)     4.00K
+Tensor154                                            (1024,)     4.00K
+Tensor155                                               (1,)   512.00B
+Tensor156                                             (256,)     1.00K
+Tensor157                                             (256,)     1.00K
+Tensor158                                               (1,)   512.00B
+Tensor159                                             (256,)     1.00K
+Tensor160                                             (256,)     1.00K
+Tensor161                                               (1,)   512.00B
+Tensor162                                            (1024,)     4.00K
+Tensor163                                            (1024,)     4.00K
+Tensor164                                               (1,)   512.00B
+Tensor165                                             (256,)     1.00K
+Tensor166                                             (256,)     1.00K
+Tensor167                                               (1,)   512.00B
+Tensor168                                             (256,)     1.00K
+Tensor169                                             (256,)     1.00K
+Tensor170                                               (1,)   512.00B
+Tensor171                                            (1024,)     4.00K
+Tensor172                                            (1024,)     4.00K
+Tensor173                                               (1,)   512.00B
+Tensor174                                             (256,)     1.00K
+Tensor175                                             (256,)     1.00K
+Tensor176                                               (1,)   512.00B
+Tensor177                                             (256,)     1.00K
+Tensor178                                             (256,)     1.00K
+Tensor179                                               (1,)   512.00B
+Tensor180                                            (1024,)     4.00K
+Tensor181                                            (1024,)     4.00K
+Tensor182                                               (1,)   512.00B
+Tensor183                                             (256,)     1.00K
+Tensor184                                             (256,)     1.00K
+Tensor185                                               (1,)   512.00B
+Tensor186                                             (256,)     1.00K
+Tensor187                                             (256,)     1.00K
+Tensor188                                               (1,)   512.00B
+Tensor189                                            (1024,)     4.00K
+Tensor190                                            (1024,)     4.00K
+Tensor191                                               (1,)   512.00B
+Tensor192                                             (256,)     1.00K
+Tensor193                                             (256,)     1.00K
+Tensor194                                               (1,)   512.00B
+Tensor195                                             (256,)     1.00K
+Tensor196                                             (256,)     1.00K
+Tensor197                                               (1,)   512.00B
+Tensor198                                            (1024,)     4.00K
+Tensor199                                            (1024,)     4.00K
+Tensor200                                               (1,)   512.00B
+Tensor201                                             (256,)     1.00K
+Tensor202                                             (256,)     1.00K
+Tensor203                                               (1,)   512.00B
+Tensor204                                             (256,)     1.00K
+Tensor205                                             (256,)     1.00K
+Tensor206                                               (1,)   512.00B
+Tensor207                                            (1024,)     4.00K
+Tensor208                                            (1024,)     4.00K
+Tensor209                                               (1,)   512.00B
+Tensor210                                             (256,)     1.00K
+Tensor211                                             (256,)     1.00K
+Tensor212                                               (1,)   512.00B
 Tensor213                                             (256,)     1.00K
-Tensor214                                               (1,)   512.00B
-Tensor215                                             (256,)     1.00K
-Tensor216                                             (256,)     1.00K
-Tensor217                                               (1,)   512.00B
-Tensor218                                              (64,)   512.00B
-Tensor219                                              (64,)   512.00B
-Tensor220                                               (1,)   512.00B
-Tensor221                                              (64,)   512.00B
-Tensor222                                              (64,)   512.00B
-Tensor223                                               (1,)   512.00B
-Tensor224                                             (256,)     1.00K
-Tensor225                                             (256,)     1.00K
-Tensor226                                               (1,)   512.00B
-Tensor227                                              (64,)   512.00B
-Tensor228                                              (64,)   512.00B
-Tensor229                                               (1,)   512.00B
-Tensor230                                              (64,)   512.00B
-Tensor231                                              (64,)   512.00B
-Tensor232                                               (1,)   512.00B
-Tensor233                                             (256,)     1.00K
-Tensor234                                             (256,)     1.00K
-Tensor235                                               (1,)   512.00B
-Tensor236                                             (128,)   512.00B
-Tensor237                                             (128,)   512.00B
-Tensor238                                               (1,)   512.00B
-Tensor239                                             (128,)   512.00B
-Tensor240                                             (128,)   512.00B
-Tensor241                                               (1,)   512.00B
-Tensor242                                             (512,)     2.00K
-Tensor243                                             (512,)     2.00K
-Tensor244                                               (1,)   512.00B
-Tensor245                                             (512,)     2.00K
-Tensor246                                             (512,)     2.00K
-Tensor247                                               (1,)   512.00B
-Tensor248                                             (128,)   512.00B
-Tensor249                                             (128,)   512.00B
-Tensor250                                               (1,)   512.00B
-Tensor251                                             (128,)   512.00B
-Tensor252                                             (128,)   512.00B
-Tensor253                                               (1,)   512.00B
-Tensor254                                             (512,)     2.00K
-Tensor255                                             (512,)     2.00K
-Tensor256                                               (1,)   512.00B
-Tensor257                                             (128,)   512.00B
-Tensor258                                             (128,)   512.00B
-Tensor259                                               (1,)   512.00B
-Tensor260                                             (128,)   512.00B
-Tensor261                                             (128,)   512.00B
-Tensor262                                               (1,)   512.00B
-Tensor263                                             (512,)     2.00K
-Tensor264                                             (512,)     2.00K
-Tensor265                                               (1,)   512.00B
-Tensor266                                             (128,)   512.00B
-Tensor267                                             (128,)   512.00B
-Tensor268                                               (1,)   512.00B
-Tensor269                                             (128,)   512.00B
-Tensor270                                             (128,)   512.00B
-Tensor271                                               (1,)   512.00B
-Tensor272                                             (512,)     2.00K
-Tensor273                                             (512,)     2.00K
-Tensor274                                               (1,)   512.00B
-Tensor275                                             (256,)     1.00K
+Tensor214                                             (256,)     1.00K
+Tensor215                                               (1,)   512.00B
+Tensor216                                            (1024,)     4.00K
+Tensor217                                            (1024,)     4.00K
+Tensor218                                               (1,)   512.00B
+Tensor219                                             (256,)     1.00K
+Tensor220                                             (256,)     1.00K
+Tensor221                                               (1,)   512.00B
+Tensor222                                             (256,)     1.00K
+Tensor223                                             (256,)     1.00K
+Tensor224                                               (1,)   512.00B
+Tensor225                                            (1024,)     4.00K
+Tensor226                                            (1024,)     4.00K
+Tensor227                                               (1,)   512.00B
+Tensor228                                             (256,)     1.00K
+Tensor229                                             (256,)     1.00K
+Tensor230                                               (1,)   512.00B
+Tensor231                                             (256,)     1.00K
+Tensor232                                             (256,)     1.00K
+Tensor233                                               (1,)   512.00B
+Tensor234                                            (1024,)     4.00K
+Tensor235                                            (1024,)     4.00K
+Tensor236                                               (1,)   512.00B
+Tensor237                                             (256,)     1.00K
+Tensor238                                             (256,)     1.00K
+Tensor239                                               (1,)   512.00B
+Tensor240                                             (256,)     1.00K
+Tensor241                                             (256,)     1.00K
+Tensor242                                               (1,)   512.00B
+Tensor243                                            (1024,)     4.00K
+Tensor244                                            (1024,)     4.00K
+Tensor245                                               (1,)   512.00B
+Tensor246                                             (256,)     1.00K
+Tensor247                                             (256,)     1.00K
+Tensor248                                               (1,)   512.00B
+Tensor249                                             (256,)     1.00K
+Tensor250                                             (256,)     1.00K
+Tensor251                                               (1,)   512.00B
+Tensor252                                            (1024,)     4.00K
+Tensor253                                            (1024,)     4.00K
+Tensor254                                               (1,)   512.00B
+Tensor255                                             (256,)     1.00K
+Tensor256                                             (256,)     1.00K
+Tensor257                                               (1,)   512.00B
+Tensor258                                             (256,)     1.00K
+Tensor259                                             (256,)     1.00K
+Tensor260                                               (1,)   512.00B
+Tensor261                                            (1024,)     4.00K
+Tensor262                                            (1024,)     4.00K
+Tensor263                                               (1,)   512.00B
+Tensor264                                             (256,)     1.00K
+Tensor265                                             (256,)     1.00K
+Tensor266                                               (1,)   512.00B
+Tensor267                                             (256,)     1.00K
+Tensor268                                             (256,)     1.00K
+Tensor269                                               (1,)   512.00B
+Tensor270                                            (1024,)     4.00K
+Tensor271                                            (1024,)     4.00K
+Tensor272                                               (1,)   512.00B
+Tensor273                                             (256,)     1.00K
+Tensor274                                             (256,)     1.00K
+Tensor275                                               (1,)   512.00B
 Tensor276                                             (256,)     1.00K
-Tensor277                                               (1,)   512.00B
-Tensor278                                             (256,)     1.00K
-Tensor279                                             (256,)     1.00K
-Tensor280                                               (1,)   512.00B
-Tensor281                                            (1024,)     4.00K
-Tensor282                                            (1024,)     4.00K
-Tensor283                                               (1,)   512.00B
-Tensor284                                            (1024,)     4.00K
-Tensor285                                            (1024,)     4.00K
-Tensor286                                               (1,)   512.00B
-Tensor287                                             (256,)     1.00K
-Tensor288                                             (256,)     1.00K
-Tensor289                                               (1,)   512.00B
-Tensor290                                             (256,)     1.00K
-Tensor291                                             (256,)     1.00K
-Tensor292                                               (1,)   512.00B
-Tensor293                                            (1024,)     4.00K
-Tensor294                                            (1024,)     4.00K
-Tensor295                                               (1,)   512.00B
-Tensor296                                             (256,)     1.00K
-Tensor297                                             (256,)     1.00K
-Tensor298                                               (1,)   512.00B
-Tensor299                                             (256,)     1.00K
-Tensor300                                             (256,)     1.00K
-Tensor301                                               (1,)   512.00B
-Tensor302                                            (1024,)     4.00K
-Tensor303                                            (1024,)     4.00K
-Tensor304                                               (1,)   512.00B
-Tensor305                                             (256,)     1.00K
-Tensor306                                             (256,)     1.00K
-Tensor307                                               (1,)   512.00B
-Tensor308                                             (256,)     1.00K
-Tensor309                                             (256,)     1.00K
-Tensor310                                               (1,)   512.00B
-Tensor311                                            (1024,)     4.00K
-Tensor312                                            (1024,)     4.00K
-Tensor313                                               (1,)   512.00B
-Tensor314                                             (256,)     1.00K
-Tensor315                                             (256,)     1.00K
-Tensor316                                               (1,)   512.00B
-Tensor317                                             (256,)     1.00K
-Tensor318                                             (256,)     1.00K
-Tensor319                                               (1,)   512.00B
-Tensor320                                            (1024,)     4.00K
-Tensor321                                            (1024,)     4.00K
-Tensor322                                               (1,)   512.00B
-Tensor323                                             (256,)     1.00K
-Tensor324                                             (256,)     1.00K
-Tensor325                                               (1,)   512.00B
-Tensor326                                             (256,)     1.00K
-Tensor327                                             (256,)     1.00K
-Tensor328                                               (1,)   512.00B
-Tensor329                                            (1024,)     4.00K
-Tensor330                                            (1024,)     4.00K
-Tensor331                                               (1,)   512.00B
-Tensor332                                             (256,)     1.00K
-Tensor333                                             (256,)     1.00K
-Tensor334                                               (1,)   512.00B
-Tensor335                                             (256,)     1.00K
-Tensor336                                             (256,)     1.00K
-Tensor337                                               (1,)   512.00B
-Tensor338                                            (1024,)     4.00K
-Tensor339                                            (1024,)     4.00K
-Tensor340                                               (1,)   512.00B
-Tensor341                                             (256,)     1.00K
-Tensor342                                             (256,)     1.00K
-Tensor343                                               (1,)   512.00B
-Tensor344                                             (256,)     1.00K
-Tensor345                                             (256,)     1.00K
-Tensor346                                               (1,)   512.00B
-Tensor347                                            (1024,)     4.00K
-Tensor348                                            (1024,)     4.00K
-Tensor349                                               (1,)   512.00B
-Tensor350                                             (256,)     1.00K
-Tensor351                                             (256,)     1.00K
-Tensor352                                               (1,)   512.00B
-Tensor353                                             (256,)     1.00K
-Tensor354                                             (256,)     1.00K
-Tensor355                                               (1,)   512.00B
-Tensor356                                            (1024,)     4.00K
-Tensor357                                            (1024,)     4.00K
-Tensor358                                               (1,)   512.00B
-Tensor359                                             (256,)     1.00K
-Tensor360                                             (256,)     1.00K
-Tensor361                                               (1,)   512.00B
-Tensor362                                             (256,)     1.00K
-Tensor363                                             (256,)     1.00K
-Tensor364                                               (1,)   512.00B
-Tensor365                                            (1024,)     4.00K
-Tensor366                                            (1024,)     4.00K
-Tensor367                                               (1,)   512.00B
-Tensor368                                             (256,)     1.00K
-Tensor369                                             (256,)     1.00K
-Tensor370                                               (1,)   512.00B
-Tensor371                                             (256,)     1.00K
-Tensor372                                             (256,)     1.00K
-Tensor373                                               (1,)   512.00B
-Tensor374                                            (1024,)     4.00K
-Tensor375                                            (1024,)     4.00K
-Tensor376                                               (1,)   512.00B
-Tensor377                                             (256,)     1.00K
-Tensor378                                             (256,)     1.00K
-Tensor379                                               (1,)   512.00B
-Tensor380                                             (256,)     1.00K
-Tensor381                                             (256,)     1.00K
-Tensor382                                               (1,)   512.00B
-Tensor383                                            (1024,)     4.00K
-Tensor384                                            (1024,)     4.00K
-Tensor385                                               (1,)   512.00B
-Tensor386                                             (256,)     1.00K
-Tensor387                                             (256,)     1.00K
-Tensor388                                               (1,)   512.00B
-Tensor389                                             (256,)     1.00K
-Tensor390                                             (256,)     1.00K
-Tensor391                                               (1,)   512.00B
-Tensor392                                            (1024,)     4.00K
-Tensor393                                            (1024,)     4.00K
-Tensor394                                               (1,)   512.00B
-Tensor395                                             (256,)     1.00K
-Tensor396                                             (256,)     1.00K
-Tensor397                                               (1,)   512.00B
-Tensor398                                             (256,)     1.00K
-Tensor399                                             (256,)     1.00K
-Tensor400                                               (1,)   512.00B
-Tensor401                                            (1024,)     4.00K
-Tensor402                                            (1024,)     4.00K
-Tensor403                                               (1,)   512.00B
-Tensor404                                             (256,)     1.00K
-Tensor405                                             (256,)     1.00K
-Tensor406                                               (1,)   512.00B
-Tensor407                                             (256,)     1.00K
-Tensor408                                             (256,)     1.00K
-Tensor409                                               (1,)   512.00B
-Tensor410                                            (1024,)     4.00K
-Tensor411                                            (1024,)     4.00K
-Tensor412                                               (1,)   512.00B
-Tensor413                                             (256,)     1.00K
-Tensor414                                             (256,)     1.00K
-Tensor415                                               (1,)   512.00B
-Tensor416                                             (256,)     1.00K
-Tensor417                                             (256,)     1.00K
-Tensor418                                               (1,)   512.00B
-Tensor419                                            (1024,)     4.00K
-Tensor420                                            (1024,)     4.00K
-Tensor421                                               (1,)   512.00B
-Tensor422                                             (256,)     1.00K
-Tensor423                                             (256,)     1.00K
-Tensor424                                               (1,)   512.00B
-Tensor425                                             (256,)     1.00K
-Tensor426                                             (256,)     1.00K
-Tensor427                                               (1,)   512.00B
-Tensor428                                            (1024,)     4.00K
-Tensor429                                            (1024,)     4.00K
-Tensor430                                               (1,)   512.00B
-Tensor431                                             (256,)     1.00K
-Tensor432                                             (256,)     1.00K
-Tensor433                                               (1,)   512.00B
-Tensor434                                             (256,)     1.00K
-Tensor435                                             (256,)     1.00K
-Tensor436                                               (1,)   512.00B
-Tensor437                                            (1024,)     4.00K
-Tensor438                                            (1024,)     4.00K
-Tensor439                                               (1,)   512.00B
-Tensor440                                             (256,)     1.00K
-Tensor441                                             (256,)     1.00K
-Tensor442                                               (1,)   512.00B
-Tensor443                                             (256,)     1.00K
-Tensor444                                             (256,)     1.00K
-Tensor445                                               (1,)   512.00B
-Tensor446                                            (1024,)     4.00K
-Tensor447                                            (1024,)     4.00K
-Tensor448                                               (1,)   512.00B
-Tensor449                                             (256,)     1.00K
-Tensor450                                             (256,)     1.00K
-Tensor451                                               (1,)   512.00B
-Tensor452                                             (256,)     1.00K
-Tensor453                                             (256,)     1.00K
-Tensor454                                               (1,)   512.00B
-Tensor455                                            (1024,)     4.00K
-Tensor456                                            (1024,)     4.00K
-Tensor457                                               (1,)   512.00B
-Tensor458                                             (256,)     1.00K
-Tensor459                                             (256,)     1.00K
-Tensor460                                               (1,)   512.00B
-Tensor461                                             (256,)     1.00K
-Tensor462                                             (256,)     1.00K
-Tensor463                                               (1,)   512.00B
-Tensor464                                            (1024,)     4.00K
-Tensor465                                            (1024,)     4.00K
-Tensor466                                               (1,)   512.00B
-Tensor467                                             (256,)     1.00K
-Tensor468                                             (256,)     1.00K
-Tensor469                                               (1,)   512.00B
-Tensor470                                             (256,)     1.00K
-Tensor471                                             (256,)     1.00K
-Tensor472                                               (1,)   512.00B
-Tensor473                                            (1024,)     4.00K
-Tensor474                                            (1024,)     4.00K
-Tensor475                                               (1,)   512.00B
-Tensor476                                             (256,)     1.00K
-Tensor477                                             (256,)     1.00K
-Tensor478                                               (1,)   512.00B
-Tensor479                                             (256,)     1.00K
-Tensor480                                             (256,)     1.00K
-Tensor481                                               (1,)   512.00B
-Tensor482                                            (1024,)     4.00K
-Tensor483                                            (1024,)     4.00K
-Tensor484                                               (1,)   512.00B
-Tensor485                                             (512,)     2.00K
-Tensor486                                             (512,)     2.00K
-Tensor487                                               (1,)   512.00B
-Tensor488                                             (512,)     2.00K
-Tensor489                                             (512,)     2.00K
-Tensor490                                               (1,)   512.00B
-Tensor491                                            (2048,)     8.00K
-Tensor492                                            (2048,)     8.00K
-Tensor493                                               (1,)   512.00B
-Tensor494                                            (2048,)     8.00K
-Tensor495                                            (2048,)     8.00K
-Tensor496                                               (1,)   512.00B
-Tensor497                                             (512,)     2.00K
-Tensor498                                             (512,)     2.00K
-Tensor499                                               (1,)   512.00B
-Tensor500                                             (512,)     2.00K
-Tensor501                                             (512,)     2.00K
-Tensor502                                               (1,)   512.00B
-Tensor503                                            (2048,)     8.00K
-Tensor504                                            (2048,)     8.00K
-Tensor505                                               (1,)   512.00B
-Tensor506                                             (512,)     2.00K
-Tensor507                                             (512,)     2.00K
-Tensor508                                               (1,)   512.00B
-Tensor509                                             (512,)     2.00K
-Tensor510                                             (512,)     2.00K
-Tensor511                                               (1,)   512.00B
-Tensor512                                            (2048,)     8.00K
-Tensor513                                            (2048,)     8.00K
-Tensor514                                               (1,)   512.00B
-Tensor515                                 (1, 3, 1024, 2048)    24.00M
-Parameter516                                   (64, 3, 7, 7)    37.00K
-Parameter517                                           (64,)   512.00B
-Parameter518                                           (64,)   512.00B
-Parameter519                                 (64, 256, 1, 1)    64.00K
-Parameter520                                           (64,)   512.00B
-Parameter521                                           (64,)   512.00B
-Parameter522                                  (64, 64, 3, 3)   144.00K
-Parameter523                                           (64,)   512.00B
-Parameter524                                           (64,)   512.00B
-Parameter525                                 (256, 64, 1, 1)    64.00K
-Parameter526                                          (256,)     1.00K
-Parameter527                                          (256,)     1.00K
-Parameter528                                 (64, 256, 1, 1)    64.00K
-Parameter529                                           (64,)   512.00B
-Parameter530                                           (64,)   512.00B
-Parameter531                                  (64, 64, 3, 3)   144.00K
-Parameter532                                           (64,)   512.00B
-Parameter533                                           (64,)   512.00B
-Parameter534                                 (256, 64, 1, 1)    64.00K
-Parameter535                                          (256,)     1.00K
-Parameter536                                          (256,)     1.00K
-Parameter537                                (256, 512, 1, 1)   512.00K
-Parameter538                                          (256,)     1.00K
-Parameter539                                          (256,)     1.00K
-Parameter540                                (256, 256, 3, 3)     2.25M
-Parameter541                                          (256,)     1.00K
-Parameter542                                          (256,)     1.00K
-Parameter543                               (1024, 256, 1, 1)     1.00M
-Parameter544                                         (1024,)     4.00K
-Parameter545                                         (1024,)     4.00K
-Parameter546                               (256, 1024, 1, 1)     1.00M
-Parameter547                                          (256,)     1.00K
-Parameter548                                          (256,)     1.00K
-Parameter549                                (256, 256, 3, 3)     2.25M
-Parameter550                                          (256,)     1.00K
-Parameter551                                          (256,)     1.00K
-Parameter552                               (1024, 256, 1, 1)     1.00M
-Parameter553                                         (1024,)     4.00K
-Parameter554                                         (1024,)     4.00K
-Parameter555                               (256, 1024, 1, 1)     1.00M
-Parameter556                                          (256,)     1.00K
-Parameter557                                          (256,)     1.00K
-Parameter558                                (256, 256, 3, 3)     2.25M
-Parameter559                                          (256,)     1.00K
-Parameter560                                          (256,)     1.00K
-Parameter561                               (1024, 256, 1, 1)     1.00M
-Parameter562                                         (1024,)     4.00K
-Parameter563                                         (1024,)     4.00K
-Parameter564                               (256, 1024, 1, 1)     1.00M
-Parameter565                                          (256,)     1.00K
-Parameter566                                          (256,)     1.00K
-Parameter567                                (256, 256, 3, 3)     2.25M
-Parameter568                                          (256,)     1.00K
-Parameter569                                          (256,)     1.00K
-Parameter570                               (1024, 256, 1, 1)     1.00M
-Parameter571                                         (1024,)     4.00K
-Parameter572                                         (1024,)     4.00K
-Parameter573                               (1024, 512, 1, 1)     2.00M
-Parameter574                                         (1024,)     4.00K
-Parameter575                                         (1024,)     4.00K
-Parameter576                                  (64, 64, 1, 1)    16.00K
-Parameter577                                           (64,)   512.00B
-Parameter578                                           (64,)   512.00B
-Parameter579                                  (64, 64, 3, 3)   144.00K
-Parameter580                                           (64,)   512.00B
-Parameter581                                           (64,)   512.00B
-Parameter582                                 (256, 64, 1, 1)    64.00K
-Parameter583                                          (256,)     1.00K
-Parameter584                                          (256,)     1.00K
-Parameter585                                (128, 256, 1, 1)   128.00K
-Parameter586                                          (128,)   512.00B
-Parameter587                                          (128,)   512.00B
-Parameter588                                (128, 128, 3, 3)   576.00K
-Parameter589                                          (128,)   512.00B
-Parameter590                                          (128,)   512.00B
-Parameter591                                (512, 128, 1, 1)   256.00K
-Parameter592                                          (512,)     2.00K
-Parameter593                                          (512,)     2.00K
-Parameter594                                (128, 512, 1, 1)   256.00K
-Parameter595                                          (128,)   512.00B
-Parameter596                                          (128,)   512.00B
-Parameter597                                (128, 128, 3, 3)   576.00K
-Parameter598                                          (128,)   512.00B
-Parameter599                                          (128,)   512.00B
-Parameter600                                (512, 128, 1, 1)   256.00K
-Parameter601                                          (512,)     2.00K
-Parameter602                                          (512,)     2.00K
-Parameter603                                (128, 512, 1, 1)   256.00K
-Parameter604                                          (128,)   512.00B
-Parameter605                                          (128,)   512.00B
-Parameter606                                (128, 128, 3, 3)   576.00K
-Parameter607                                          (128,)   512.00B
-Parameter608                                          (128,)   512.00B
-Parameter609                                (512, 128, 1, 1)   256.00K
-Parameter610                                          (512,)     2.00K
-Parameter611                                          (512,)     2.00K
-Parameter612                                (128, 512, 1, 1)   256.00K
-Parameter613                                          (128,)   512.00B
-Parameter614                                          (128,)   512.00B
-Parameter615                                (128, 128, 3, 3)   576.00K
-Parameter616                                          (128,)   512.00B
-Parameter617                                          (128,)   512.00B
-Parameter618                                (512, 128, 1, 1)   256.00K
-Parameter619                                          (512,)     2.00K
-Parameter620                                          (512,)     2.00K
-Parameter621                                 (256, 64, 1, 1)    64.00K
-Parameter622                                          (256,)     1.00K
-Parameter623                                          (256,)     1.00K
-Parameter624                                (512, 256, 1, 1)   512.00K
-Parameter625                                          (512,)     2.00K
-Parameter626                                          (512,)     2.00K
+Tensor277                                             (256,)     1.00K
+Tensor278                                               (1,)   512.00B
+Tensor279                                            (1024,)     4.00K
+Tensor280                                            (1024,)     4.00K
+Tensor281                                               (1,)   512.00B
+Tensor282                                             (512,)     2.00K
+Tensor283                                             (512,)     2.00K
+Tensor284                                               (1,)   512.00B
+Tensor285                                             (512,)     2.00K
+Tensor286                                             (512,)     2.00K
+Tensor287                                               (1,)   512.00B
+Tensor288                                            (2048,)     8.00K
+Tensor289                                            (2048,)     8.00K
+Tensor290                                               (1,)   512.00B
+Tensor291                                            (2048,)     8.00K
+Tensor292                                            (2048,)     8.00K
+Tensor293                                               (1,)   512.00B
+Tensor294                                             (512,)     2.00K
+Tensor295                                             (512,)     2.00K
+Tensor296                                               (1,)   512.00B
+Tensor297                                             (512,)     2.00K
+Tensor298                                             (512,)     2.00K
+Tensor299                                               (1,)   512.00B
+Tensor300                                            (2048,)     8.00K
+Tensor301                                            (2048,)     8.00K
+Tensor302                                               (1,)   512.00B
+Tensor303                                             (512,)     2.00K
+Tensor304                                             (512,)     2.00K
+Tensor305                                               (1,)   512.00B
+Tensor306                                             (512,)     2.00K
+Tensor307                                             (512,)     2.00K
+Tensor308                                               (1,)   512.00B
+Tensor309                                            (2048,)     8.00K
+Tensor310                                            (2048,)     8.00K
+Tensor311                                               (1,)   512.00B
+Tensor312                                 (1, 3, 1024, 2048)    24.00M
+module.conv1.weight                            (64, 3, 7, 7)    37.00K
+module.bn1.weight                                      (64,)   512.00B
+module.bn1.bias                                        (64,)   512.00B
+module.layer1.1.conv1.weight                 (64, 256, 1, 1)    64.00K
+module.layer1.1.bn1.weight                             (64,)   512.00B
+module.layer1.1.bn1.bias                               (64,)   512.00B
+module.layer1.1.conv2.weight                  (64, 64, 3, 3)   144.00K
+module.layer1.1.bn2.weight                             (64,)   512.00B
+module.layer1.1.bn2.bias                               (64,)   512.00B
+module.layer1.1.conv3.weight                 (256, 64, 1, 1)    64.00K
+module.layer1.1.bn3.weight                            (256,)     1.00K
+module.layer1.1.bn3.bias                              (256,)     1.00K
+module.layer1.2.conv1.weight                 (64, 256, 1, 1)    64.00K
+module.layer1.2.bn1.weight                             (64,)   512.00B
+module.layer1.2.bn1.bias                               (64,)   512.00B
+module.layer1.2.conv2.weight                  (64, 64, 3, 3)   144.00K
+module.layer1.2.bn2.weight                             (64,)   512.00B
+module.layer1.2.bn2.bias                               (64,)   512.00B
+module.layer1.2.conv3.weight                 (256, 64, 1, 1)    64.00K
+module.layer1.2.bn3.weight                            (256,)     1.00K
+module.layer1.2.bn3.bias                              (256,)     1.00K
+module.layer3.0.conv1.weight                (256, 512, 1, 1)   512.00K
+module.layer3.0.bn1.weight                            (256,)     1.00K
+module.layer3.0.bn1.bias                              (256,)     1.00K
+module.layer3.0.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.0.bn2.weight                            (256,)     1.00K
+module.layer3.0.bn2.bias                              (256,)     1.00K
+module.layer3.0.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.0.bn3.weight                           (1024,)     4.00K
+module.layer3.0.bn3.bias                             (1024,)     4.00K
+module.layer3.1.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.1.bn1.weight                            (256,)     1.00K
+module.layer3.1.bn1.bias                              (256,)     1.00K
+module.layer3.1.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.1.bn2.weight                            (256,)     1.00K
+module.layer3.1.bn2.bias                              (256,)     1.00K
+module.layer3.1.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.1.bn3.weight                           (1024,)     4.00K
+module.layer3.1.bn3.bias                             (1024,)     4.00K
+module.layer3.2.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.2.bn1.weight                            (256,)     1.00K
+module.layer3.2.bn1.bias                              (256,)     1.00K
+module.layer3.2.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.2.bn2.weight                            (256,)     1.00K
+module.layer3.2.bn2.bias                              (256,)     1.00K
+module.layer3.2.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.2.bn3.weight                           (1024,)     4.00K
+module.layer3.2.bn3.bias                             (1024,)     4.00K
+module.layer3.3.conv1.weight               (256, 1024, 1, 1)     1.00M
+module.layer3.3.bn1.weight                            (256,)     1.00K
+module.layer3.3.bn1.bias                              (256,)     1.00K
+module.layer3.3.conv2.weight                (256, 256, 3, 3)     2.25M
+module.layer3.3.bn2.weight                            (256,)     1.00K
+module.layer3.3.bn2.bias                              (256,)     1.00K
+module.layer3.3.conv3.weight               (1024, 256, 1, 1)     1.00M
+module.layer3.3.bn3.weight                           (1024,)     4.00K
+module.layer3.3.bn3.bias                             (1024,)     4.00K
+module.layer3.0.downsample.0.weight        (1024, 512, 1, 1)     2.00M
+module.layer3.0.downsample.1.weight                  (1024,)     4.00K
+module.layer3.0.downsample.1.bias                    (1024,)     4.00K
+module.layer1.0.conv1.weight                  (64, 64, 1, 1)    16.00K
+module.layer1.0.bn1.weight                             (64,)   512.00B
+module.layer1.0.bn1.bias                               (64,)   512.00B
+module.layer1.0.conv2.weight                  (64, 64, 3, 3)   144.00K
+module.layer1.0.bn2.weight                             (64,)   512.00B
+module.layer1.0.bn2.bias                               (64,)   512.00B
+module.layer1.0.conv3.weight                 (256, 64, 1, 1)    64.00K
+module.layer1.0.bn3.weight                            (256,)     1.00K
+module.layer1.0.bn3.bias                              (256,)     1.00K
+module.layer2.0.conv1.weight                (128, 256, 1, 1)   128.00K
+module.layer2.0.bn1.weight                            (128,)   512.00B
+module.layer2.0.bn1.bias                              (128,)   512.00B
+module.layer2.0.conv2.weight                (128, 128, 3, 3)   576.00K
+module.layer2.0.bn2.weight                            (128,)   512.00B
+module.layer2.0.bn2.bias                              (128,)   512.00B
+module.layer2.0.conv3.weight                (512, 128, 1, 1)   256.00K
+module.layer2.0.bn3.weight                            (512,)     2.00K
+module.layer2.0.bn3.bias                              (512,)     2.00K
+module.layer2.1.conv1.weight                (128, 512, 1, 1)   256.00K
+module.layer2.1.bn1.weight                            (128,)   512.00B
+module.layer2.1.bn1.bias                              (128,)   512.00B
+module.layer2.1.conv2.weight                (128, 128, 3, 3)   576.00K
+module.layer2.1.bn2.weight                            (128,)   512.00B
+module.layer2.1.bn2.bias                              (128,)   512.00B
+module.layer2.1.conv3.weight                (512, 128, 1, 1)   256.00K
+module.layer2.1.bn3.weight                            (512,)     2.00K
+module.layer2.1.bn3.bias                              (512,)     2.00K
+module.layer2.2.conv1.weight                (128, 512, 1, 1)   256.00K
+module.layer2.2.bn1.weight                            (128,)   512.00B
+module.layer2.2.bn1.bias                              (128,)   512.00B
+module.layer2.2.conv2.weight                (128, 128, 3, 3)   576.00K
+module.layer2.2.bn2.weight                            (128,)   512.00B
+module.layer2.2.bn2.bias                              (128,)   512.00B
+module.layer2.2.conv3.weight                (512, 128, 1, 1)   256.00K
+module.layer2.2.bn3.weight                            (512,)     2.00K
+module.layer2.2.bn3.bias                              (512,)     2.00K
+module.layer2.3.conv1.weight                (128, 512, 1, 1)   256.00K
+module.layer2.3.bn1.weight                            (128,)   512.00B
+module.layer2.3.bn1.bias                              (128,)   512.00B
+module.layer2.3.conv2.weight                (128, 128, 3, 3)   576.00K
+module.layer2.3.bn2.weight                            (128,)   512.00B
+module.layer2.3.bn2.bias                              (128,)   512.00B
+module.layer2.3.conv3.weight                (512, 128, 1, 1)   256.00K
+module.layer2.3.bn3.weight                            (512,)     2.00K
+module.layer2.3.bn3.bias                              (512,)     2.00K
+module.layer1.0.downsample.0.weight          (256, 64, 1, 1)    64.00K
+module.layer1.0.downsample.1.weight                   (256,)     1.00K
+module.layer1.0.downsample.1.bias                     (256,)     1.00K
+module.layer2.0.downsample.0.weight         (512, 256, 1, 1)   512.00K
+module.layer2.0.downsample.1.weight                   (512,)     2.00K
+module.layer2.0.downsample.1.bias                     (512,)     2.00K
 -------------------------------------------------------------------------------
 Total Tensors: 50946064 	Used Memory: 194.40M
 The allocated memory on cuda:0: 194.65M
 Memory differs due to the matrix alignment or invisible gradient buffer tensors
 -------------------------------------------------------------------------------
-
 Parameters: 44549160
