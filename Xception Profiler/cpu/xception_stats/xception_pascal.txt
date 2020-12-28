@@ -1,0 +1,1 @@
+Average Execution Time for Xception with input shape: [1, 3, 500, 334] is 229.0 ms with std = 8.161 ms

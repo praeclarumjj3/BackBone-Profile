@@ -13,7 +13,8 @@
 ## 1. Overview
 
 This repo contains the folowing **Performance Stats** for a few popularly used **backbone networks** in the field of Computer Vision:
- 
+
+```
 - Inference Time on a GTX 2080Ti
 
 - Inference Time on a TitanXP
@@ -23,6 +24,7 @@ This repo contains the folowing **Performance Stats** for a few popularly used *
 - Memory Report during Inference
 
 - Model Structures
+```
 
 I have performed experiments on **two** types of inputs:
 
@@ -47,8 +49,11 @@ $ pip install -r requirements.txt
 
 The repository contains the following architecture:
 
-- `ResNet Profile/` - Scripts and stats for inference performance of various variants of **ResNet**.
-- `MobileNetV2 Profiler/` - Scripts and stats for inference performance of **MobileNet-V2**.
+- [MobileNetV2 Profiler](https://github.com/praeclarumjj3/BackBone-Profile/tree/master/MobilnetV2%20Profiler) - Scripts and stats for inference performance of **MobileNet-V2**.
+
+- [ResNet Profiler](https://github.com/praeclarumjj3/BackBone-Profile/tree/master/ResNet%20Profiler) - Scripts and stats for inference performance of various variants of **ResNet**.
+
+- [Xception Profiler](https://github.com/praeclarumjj3/BackBone-Profile/tree/master/Xception%20Profiler) - Scripts and stats for inference performance of **Xception**.
 
 ## 4. Reproduction
 
@@ -67,6 +72,7 @@ All the experiments are performed with a `batch size=1` and 300 iterations.
 | **ResNet-50**     |       **61.397**             |       **82.334**             | **16.28**      | **12.14**      |   **121.73**            | **25.557**    |
 | **ResNet-101**    |       **100.426**            |       **122.491**            | **9.95**       | **8.16**       |   **194.65**            | **44.549**    |
 | **MobileNet-V2**  |       **33.627**             |       **54.314**             | **29.73**      | **18.41**      |   **37.58**             | **3.504**     |
+| **Xception**      |       **77.079**             |       **144.919**            | **12.97**      | **6.90**       |   **111.45**            | **22.855**     |
 
 #### Performance on PASCAL-VOC-2012
 
@@ -77,7 +83,7 @@ All the experiments are performed with a `batch size=1` and 300 iterations.
 | **ResNet-50**     |       **7.628**              |       **8.927**              | **131.09**     | **112.01**     |   **100.23**            | **25.557**    |
 | **ResNet-101**    |       **12.579**             |       **14.509**             | **79.49**      | **68.92**      |   **172.65**            | **44.549**    |
 | **MobileNet-V2**  |       **5.570**              |       **5.795**              | **179.53**     | **172.56**     |   **14.49**             | **3.504**     |
-
+| **Xception**      |       **7.919**              |       **12.042**             | **126.27**     | **83.04**      |   **89.36**             | **22.855**     |
 
 ### Inference Time (CPU) 
 
@@ -89,7 +95,8 @@ All the experiments are performed with a `batch size=1` and 300 iterations.
 | **ResNet-34**     |       **807.57**    | **1.23**  |
 | **ResNet-50**     |       **1626.05**   | **0.61**  |
 | **ResNet-101**    |       **2344.98**   | **0.42**  |
-| **MobileNet-V2**  |       **560.022**   |  *1.78*  | 
+| **MobileNet-V2**  |       **560.022**   | **1.78**  |
+| **Xception**      |       **2782.874**  | **0.35**  |
 
 #### Performance on PASCAL-VOC-2012
 
@@ -100,3 +107,4 @@ All the experiments are performed with a `batch size=1` and 300 iterations.
 |    **ResNet-50**      |          **133.71**       |    **7.47**      |
 |    **ResNet-101**     |          **223.59**       |    **4.47**      |
 |    **MobileNet-V2**   |          **70.180**       |   **14.24**      | 
+|    **Xception**       |          **229.000**      |   **4.36**       |

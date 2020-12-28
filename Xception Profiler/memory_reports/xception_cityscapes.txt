@@ -1,0 +1,286 @@
+Element type                                            Size  Used MEM
+-------------------------------------------------------------------------------
+Storage on cuda:0
+Tensor0                                                 (1,)   512.00B
+Tensor1                                                 (1,)   512.00B
+Tensor2                                                 (1,)   512.00B
+Tensor3                                                 (1,)   512.00B
+Tensor4                                                 (1,)   512.00B
+Tensor5                                                 (1,)   512.00B
+Tensor6                                                 (1,)   512.00B
+Tensor7                                                 (1,)   512.00B
+Tensor8                                                 (1,)   512.00B
+Tensor9                                                 (1,)   512.00B
+Tensor10                                                (1,)   512.00B
+Tensor11                                                (1,)   512.00B
+Tensor12                                                (1,)   512.00B
+Tensor13                                                (1,)   512.00B
+Tensor14                                                (1,)   512.00B
+Tensor15                                                (1,)   512.00B
+Tensor16                                                (1,)   512.00B
+Tensor17                                                (1,)   512.00B
+Tensor18                                                (1,)   512.00B
+Tensor19                                                (1,)   512.00B
+Tensor20                                                (1,)   512.00B
+Tensor21                                                (1,)   512.00B
+Tensor22                                                (1,)   512.00B
+Tensor23                                                (1,)   512.00B
+Tensor24                                                (1,)   512.00B
+Tensor25                                                (1,)   512.00B
+Tensor26                                                (1,)   512.00B
+Tensor27                                                (1,)   512.00B
+Tensor28                                                (1,)   512.00B
+Tensor29                                                (1,)   512.00B
+Tensor30                                                (1,)   512.00B
+Tensor31                                                (1,)   512.00B
+Tensor32                                                (1,)   512.00B
+Tensor33                                                (1,)   512.00B
+Tensor34                                                (1,)   512.00B
+Tensor35                                                (1,)   512.00B
+Tensor36                                                (1,)   512.00B
+Tensor37                                                (1,)   512.00B
+Tensor38                                                (1,)   512.00B
+Tensor39                                                (1,)   512.00B
+block8.rep.2.bias                                     (728,)     3.00K
+block11.rep.2.weight                                  (728,)     3.00K
+block11.rep.1.conv1.weight                    (728, 1, 3, 3)    26.00K
+block11.rep.1.pointwise.weight              (728, 728, 1, 1)     2.02M
+block8.rep.5.weight                                   (728,)     3.00K
+block8.rep.5.bias                                     (728,)     3.00K
+block8.rep.8.weight                                   (728,)     3.00K
+block8.rep.8.bias                                     (728,)     3.00K
+block9.rep.2.weight                                   (728,)     3.00K
+block9.rep.2.bias                                     (728,)     3.00K
+block9.rep.5.weight                                   (728,)     3.00K
+block9.rep.5.bias                                     (728,)     3.00K
+block9.rep.8.weight                                   (728,)     3.00K
+block9.rep.8.bias                                     (728,)     3.00K
+block10.rep.2.weight                                  (728,)     3.00K
+block10.rep.2.bias                                    (728,)     3.00K
+block10.rep.5.weight                                  (728,)     3.00K
+block10.rep.5.bias                                    (728,)     3.00K
+block10.rep.8.weight                                  (728,)     3.00K
+block10.rep.8.bias                                    (728,)     3.00K
+block8.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block8.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block8.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block8.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+block9.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block9.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block9.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block9.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block9.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block9.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+block10.rep.1.conv1.weight                    (728, 1, 3, 3)    26.00K
+block10.rep.1.pointwise.weight              (728, 728, 1, 1)     2.02M
+block10.rep.4.conv1.weight                    (728, 1, 3, 3)    26.00K
+block10.rep.4.pointwise.weight              (728, 728, 1, 1)     2.02M
+block10.rep.7.conv1.weight                    (728, 1, 3, 3)    26.00K
+block10.rep.7.pointwise.weight              (728, 728, 1, 1)     2.02M
+block11.rep.2.bias                                    (728,)     3.00K
+block12.rep.2.bias                                    (728,)     3.00K
+block12.rep.4.conv1.weight                    (728, 1, 3, 3)    26.00K
+Tensor40                                               (32,)   512.00B
+Tensor41                                               (32,)   512.00B
+Tensor42                                               (64,)   512.00B
+Tensor43                                               (64,)   512.00B
+Tensor44                                              (128,)   512.00B
+Tensor45                                              (128,)   512.00B
+Tensor46                                              (128,)   512.00B
+Tensor47                                              (128,)   512.00B
+Tensor48                                              (128,)   512.00B
+Tensor49                                              (128,)   512.00B
+Tensor50                                              (256,)     1.00K
+Tensor51                                              (256,)     1.00K
+Tensor52                                              (256,)     1.00K
+Tensor53                                              (256,)     1.00K
+Tensor54                                              (256,)     1.00K
+Tensor55                                              (256,)     1.00K
+Tensor56                                              (728,)     3.00K
+Tensor57                                              (728,)     3.00K
+Tensor58                                              (728,)     3.00K
+Tensor59                                              (728,)     3.00K
+Tensor60                                              (728,)     3.00K
+Tensor61                                              (728,)     3.00K
+Tensor62                                              (728,)     3.00K
+Tensor63                                              (728,)     3.00K
+Tensor64                                              (728,)     3.00K
+Tensor65                                              (728,)     3.00K
+Tensor66                                              (728,)     3.00K
+Tensor67                                              (728,)     3.00K
+Tensor68                                              (728,)     3.00K
+Tensor69                                              (728,)     3.00K
+Tensor70                                              (728,)     3.00K
+Tensor71                                              (728,)     3.00K
+Tensor72                                              (728,)     3.00K
+Tensor73                                              (728,)     3.00K
+Tensor74                                              (728,)     3.00K
+Tensor75                                              (728,)     3.00K
+Tensor76                                              (728,)     3.00K
+Tensor77                                              (728,)     3.00K
+Tensor78                                              (728,)     3.00K
+Tensor79                                              (728,)     3.00K
+Tensor80                                              (728,)     3.00K
+Tensor81                                              (728,)     3.00K
+Tensor82                                              (728,)     3.00K
+Tensor83                                              (728,)     3.00K
+Tensor84                                              (728,)     3.00K
+Tensor85                                              (728,)     3.00K
+Tensor86                                              (728,)     3.00K
+Tensor87                                              (728,)     3.00K
+Tensor88                                              (728,)     3.00K
+Tensor89                                              (728,)     3.00K
+Tensor90                                              (728,)     3.00K
+Tensor91                                              (728,)     3.00K
+Tensor92                                              (728,)     3.00K
+Tensor93                                              (728,)     3.00K
+Tensor94                                              (728,)     3.00K
+Tensor95                                              (728,)     3.00K
+Tensor96                                              (728,)     3.00K
+Tensor97                                              (728,)     3.00K
+Tensor98                                              (728,)     3.00K
+Tensor99                                              (728,)     3.00K
+Tensor100                                             (728,)     3.00K
+Tensor101                                             (728,)     3.00K
+Tensor102                                             (728,)     3.00K
+Tensor103                                             (728,)     3.00K
+Tensor104                                             (728,)     3.00K
+Tensor105                                             (728,)     3.00K
+Tensor106                                            (1024,)     4.00K
+Tensor107                                            (1024,)     4.00K
+Tensor108                                            (1536,)     6.00K
+Tensor109                                            (1536,)     6.00K
+Tensor110                                            (2048,)     8.00K
+Tensor111                                            (2048,)     8.00K
+block11.rep.4.conv1.weight                    (728, 1, 3, 3)    26.00K
+block11.rep.4.pointwise.weight              (728, 728, 1, 1)     2.02M
+block11.rep.5.weight                                  (728,)     3.00K
+block11.rep.5.bias                                    (728,)     3.00K
+block11.rep.7.conv1.weight                    (728, 1, 3, 3)    26.00K
+block11.rep.7.pointwise.weight              (728, 728, 1, 1)     2.02M
+block11.rep.8.weight                                  (728,)     3.00K
+block11.rep.8.bias                                    (728,)     3.00K
+block12.skip.weight                        (1024, 728, 1, 1)     2.84M
+block12.skipbn.weight                                (1024,)     4.00K
+block12.skipbn.bias                                  (1024,)     4.00K
+block12.rep.1.conv1.weight                    (728, 1, 3, 3)    26.00K
+block12.rep.1.pointwise.weight              (728, 728, 1, 1)     2.02M
+block12.rep.2.weight                                  (728,)     3.00K
+conv3.conv1.weight                           (1024, 1, 3, 3)    36.00K
+conv3.pointwise.weight                    (1536, 1024, 1, 1)     6.00M
+bn3.weight                                           (1536,)     6.00K
+bn3.bias                                             (1536,)     6.00K
+conv4.conv1.weight                           (1536, 1, 3, 3)    54.00K
+conv4.pointwise.weight                    (2048, 1536, 1, 1)    12.00M
+bn4.weight                                           (2048,)     8.00K
+bn4.bias                                             (2048,)     8.00K
+fc.weight                                       (1000, 2048)     7.81M
+fc.bias                                              (1000,)     4.00K
+Tensor112                                             (728,)     3.00K
+Tensor113                                             (728,)     3.00K
+Tensor114                                             (728,)     3.00K
+Tensor115                                             (728,)     3.00K
+Tensor116                                             (728,)     3.00K
+Tensor117                                             (728,)     3.00K
+block12.rep.5.weight                                 (1024,)     4.00K
+block12.rep.5.bias                                   (1024,)     4.00K
+Tensor118                                            (1024,)     4.00K
+Tensor119                                            (1024,)     4.00K
+block12.rep.4.pointwise.weight             (1024, 728, 1, 1)     2.84M
+Tensor120                                 (1, 3, 1024, 2048)    24.00M
+conv1.weight                                   (32, 3, 3, 3)     3.50K
+bn1.weight                                             (32,)   512.00B
+bn1.bias                                               (32,)   512.00B
+conv2.weight                                  (64, 32, 3, 3)    72.00K
+bn2.weight                                             (64,)   512.00B
+bn2.bias                                               (64,)   512.00B
+block1.skip.weight                           (128, 64, 1, 1)    32.00K
+block1.skipbn.weight                                  (128,)   512.00B
+block1.skipbn.bias                                    (128,)   512.00B
+block1.rep.1.weight                                   (128,)   512.00B
+block1.rep.1.bias                                     (128,)   512.00B
+block1.rep.4.weight                                   (128,)   512.00B
+block1.rep.4.bias                                     (128,)   512.00B
+block1.rep.0.conv1.weight                      (64, 1, 3, 3)     2.50K
+block1.rep.0.pointwise.weight                (128, 64, 1, 1)    32.00K
+block1.rep.3.conv1.weight                     (128, 1, 3, 3)     4.50K
+block1.rep.3.pointwise.weight               (128, 128, 1, 1)    64.00K
+block2.skip.weight                          (256, 128, 1, 1)   128.00K
+block2.skipbn.weight                                  (256,)     1.00K
+block2.skipbn.bias                                    (256,)     1.00K
+block3.skip.weight                          (728, 256, 1, 1)   728.00K
+block3.skipbn.weight                                  (728,)     3.00K
+block3.skipbn.bias                                    (728,)     3.00K
+block2.rep.2.weight                                   (256,)     1.00K
+block2.rep.2.bias                                     (256,)     1.00K
+block2.rep.5.weight                                   (256,)     1.00K
+block2.rep.5.bias                                     (256,)     1.00K
+block3.rep.2.weight                                   (728,)     3.00K
+block3.rep.2.bias                                     (728,)     3.00K
+block3.rep.5.weight                                   (728,)     3.00K
+block3.rep.5.bias                                     (728,)     3.00K
+block4.rep.2.weight                                   (728,)     3.00K
+block4.rep.2.bias                                     (728,)     3.00K
+block4.rep.5.weight                                   (728,)     3.00K
+block4.rep.5.bias                                     (728,)     3.00K
+block4.rep.8.weight                                   (728,)     3.00K
+block4.rep.8.bias                                     (728,)     3.00K
+block2.rep.1.conv1.weight                     (128, 1, 3, 3)     4.50K
+block2.rep.1.pointwise.weight               (256, 128, 1, 1)   128.00K
+block2.rep.4.conv1.weight                     (256, 1, 3, 3)     9.00K
+block2.rep.4.pointwise.weight               (256, 256, 1, 1)   256.00K
+block3.rep.1.conv1.weight                     (256, 1, 3, 3)     9.00K
+block3.rep.1.pointwise.weight               (728, 256, 1, 1)   728.00K
+block3.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block3.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block4.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block4.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block4.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block4.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block4.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block4.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+block8.rep.2.weight                                   (728,)     3.00K
+block8.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block8.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block5.rep.2.weight                                   (728,)     3.00K
+block5.rep.2.bias                                     (728,)     3.00K
+block5.rep.5.weight                                   (728,)     3.00K
+block5.rep.5.bias                                     (728,)     3.00K
+block5.rep.8.weight                                   (728,)     3.00K
+block5.rep.8.bias                                     (728,)     3.00K
+block6.rep.2.weight                                   (728,)     3.00K
+block6.rep.2.bias                                     (728,)     3.00K
+block6.rep.5.weight                                   (728,)     3.00K
+block6.rep.5.bias                                     (728,)     3.00K
+block6.rep.8.weight                                   (728,)     3.00K
+block6.rep.8.bias                                     (728,)     3.00K
+block7.rep.2.weight                                   (728,)     3.00K
+block7.rep.2.bias                                     (728,)     3.00K
+block7.rep.5.weight                                   (728,)     3.00K
+block7.rep.5.bias                                     (728,)     3.00K
+block7.rep.8.weight                                   (728,)     3.00K
+block7.rep.8.bias                                     (728,)     3.00K
+block5.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block5.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block5.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block5.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block5.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block5.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+block6.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block6.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block6.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block6.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block6.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block6.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+block7.rep.1.conv1.weight                     (728, 1, 3, 3)    26.00K
+block7.rep.1.pointwise.weight               (728, 728, 1, 1)     2.02M
+block7.rep.4.conv1.weight                     (728, 1, 3, 3)    26.00K
+block7.rep.4.pointwise.weight               (728, 728, 1, 1)     2.02M
+block7.rep.7.conv1.weight                     (728, 1, 3, 3)    26.00K
+block7.rep.7.pointwise.weight               (728, 728, 1, 1)     2.02M
+-------------------------------------------------------------------------------
+Total Tensors: 29201976 	Used Memory: 111.45M
+The allocated memory on cuda:0: 112.43M
+Memory differs due to the matrix alignment or invisible gradient buffer tensors
+-------------------------------------------------------------------------------
+Parameters: 22855952
