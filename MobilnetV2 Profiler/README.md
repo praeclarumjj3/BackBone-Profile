@@ -47,7 +47,6 @@ The repository contains the following modules:
 - `stats.sh` - Shell Script for storing **inference times** for `MobilNet-V2`.
 - `summary.sh` - Shell Script for storing **model structures** for `MobilNet-V2`.
 - `mem_report.sh` - Shell Script for storing **memory reports** for `MobilNet-V2`.
-- `requirements.txt` - Contains all the dependencies required for running the code.
 
 ## 4. Reproduction
 
@@ -119,7 +118,7 @@ print("Execution Time is {} ms".format(start.elapsed_time(end)))
 
 - All the experiments are performed on a single **Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz**.
 
-- The stats are from the files in **Resnet-x's** corresponding `cpu/resnetx_stats/` folder; where `x ∈ {18, 34, 50, 101}`.
+- The stats are from the files in **MobileNetV2's** corresponding `cpu/mobilenetv2_stats/` folder.
 
 - Calculated using [time.perf_counter( )](https://docs.python.org/3/library/time.html#time.perf_counter).
 
@@ -136,5 +135,5 @@ print("Execution Time is {} ms".format((end-start)*1000))
 
 |       Model      |     Dataset        | Inference Time (ms) | Std (ms) |   FPS    | 
 | ---------------- | ------------------ | ------------------- | -------- | -------- |
-| **MobileNet-V2** |    *Cityscapes*    |       **560.022**   | *43.278* |  *1.78*  |   
-| **MobileNet-V2** |   *PASCAL-VOC-12*  |       **70.180**    | *3.190*  |  *14.24* |    
+| **MobileNet-V2** |    *Cityscapes*    |       **560.022**   | *43.278* |**1.78**  |   
+| **MobileNet-V2** |   *PASCAL-VOC-12*  |       **70.180**    | *3.190*  |**14.24** |    
